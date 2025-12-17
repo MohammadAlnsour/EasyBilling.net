@@ -1,0 +1,12 @@
+2025-11-02 16:38:08.125 +03:00 [DBG] Hosting starting
+2025-11-02 16:38:08.597 +03:00 [DBG] Starting bus instances: IBus
+2025-11-02 16:38:08.607 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-11-02 16:38:08.639 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-02 16:38:08.642 +03:00 [INF] Hosting environment: Development
+2025-11-02 16:38:08.645 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-11-02 16:38:08.648 +03:00 [DBG] Hosting started
+2025-11-02 16:38:08.687 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-11-02 16:38:08.694 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-11-02 16:38:08.707 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 53710)
+2025-11-02 16:38:08.745 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_w1eyyyyh3bcsbk4pbdxbwfexy4?temporary=true"
+2025-11-02 16:38:08.747 +03:00 [INF] Bus started: "rabbitmq://localhost/"

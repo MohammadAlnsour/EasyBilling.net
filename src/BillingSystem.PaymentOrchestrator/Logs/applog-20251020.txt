@@ -1,0 +1,568 @@
+2025-10-20 14:53:40.862 +03:00 [DBG] Hosting starting
+2025-10-20 14:53:41.305 +03:00 [DBG] Starting bus instances: IBus
+2025-10-20 14:53:41.317 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-20 14:53:41.367 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-20 14:53:41.370 +03:00 [INF] Hosting environment: Development
+2025-10-20 14:53:41.372 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-20 14:53:41.373 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-10-20 14:53:41.378 +03:00 [DBG] Hosting started
+2025-10-20 14:53:41.403 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 58987)
+2025-10-20 14:53:41.472 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_71cyyyy5y7qac6iabdxy9u4obg?temporary=true"
+2025-10-20 14:53:41.476 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-20 14:53:41.533 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-10-20 15:21:34.170 +03:00 [DBG] Hosting starting
+2025-10-20 15:21:34.615 +03:00 [DBG] Starting bus instances: IBus
+2025-10-20 15:21:34.624 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-20 15:21:34.655 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-20 15:21:34.665 +03:00 [INF] Hosting environment: Development
+2025-10-20 15:21:34.668 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-10-20 15:21:34.677 +03:00 [DBG] Hosting started
+2025-10-20 15:21:34.680 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-20 15:21:34.699 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 64856)
+2025-10-20 15:21:34.701 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-10-20 15:21:34.756 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_unaoyyyh3bcsykskbdxy9w3irx?temporary=true"
+2025-10-20 15:21:34.758 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-20 15:21:40.232 +03:00 [ERR] exception occured Error converting value "{"Id":3,"ExternalId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","TenantId":2,"Amount":100.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T12:06:07.3035987+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 462. , stackTrace    at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:21:40.236 +03:00 [ERR] exception inner exception Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice. , stackTrace    at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2025-10-20 15:21:40.239 +03:00 [ERR] Error processing message (Attempt 0)
+Newtonsoft.Json.JsonSerializationException: Error converting value "{"Id":3,"ExternalId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","TenantId":2,"Amount":100.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T12:06:07.3035987+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 462.
+ ---> System.ArgumentException: Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:21:40.251 +03:00 [WRN] Message requeued for retry (Attempt 1)
+2025-10-20 15:21:40.271 +03:00 [ERR] exception occured Error converting value "{"Id":3,"ExternalId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","TenantId":2,"Amount":100.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T12:06:07.3035987+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 462. , stackTrace    at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:21:40.274 +03:00 [ERR] exception inner exception Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice. , stackTrace    at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2025-10-20 15:21:40.277 +03:00 [ERR] Error processing message (Attempt 1)
+Newtonsoft.Json.JsonSerializationException: Error converting value "{"Id":3,"ExternalId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","TenantId":2,"Amount":100.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T12:06:07.3035987+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 462.
+ ---> System.ArgumentException: Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:21:40.285 +03:00 [WRN] Message moved to DLQ after 2 failures
+2025-10-20 15:21:40.298 +03:00 [ERR] exception occured Error converting value "{"Id":4,"ExternalId":"9d5be6c7-95e3-41f6-bead-df4d29d402b9","TenantId":2,"Amount":10.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T13:01:21.96586+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 459. , stackTrace    at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:21:40.301 +03:00 [ERR] exception inner exception Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice. , stackTrace    at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2025-10-20 15:21:40.303 +03:00 [ERR] Error processing message (Attempt 0)
+Newtonsoft.Json.JsonSerializationException: Error converting value "{"Id":4,"ExternalId":"9d5be6c7-95e3-41f6-bead-df4d29d402b9","TenantId":2,"Amount":10.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T13:01:21.96586+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 459.
+ ---> System.ArgumentException: Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:21:40.309 +03:00 [WRN] Message requeued for retry (Attempt 1)
+2025-10-20 15:21:40.339 +03:00 [ERR] exception occured Error converting value "{"Id":4,"ExternalId":"9d5be6c7-95e3-41f6-bead-df4d29d402b9","TenantId":2,"Amount":10.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T13:01:21.96586+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 459. , stackTrace    at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:21:40.341 +03:00 [ERR] exception inner exception Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice. , stackTrace    at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2025-10-20 15:21:40.343 +03:00 [ERR] Error processing message (Attempt 1)
+Newtonsoft.Json.JsonSerializationException: Error converting value "{"Id":4,"ExternalId":"9d5be6c7-95e3-41f6-bead-df4d29d402b9","TenantId":2,"Amount":10.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T13:01:21.96586+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 459.
+ ---> System.ArgumentException: Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:21:40.348 +03:00 [WRN] Message moved to DLQ after 2 failures
+2025-10-20 15:34:47.669 +03:00 [ERR] exception occured Error converting value "{"Id":3,"ExternalId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","TenantId":2,"Amount":100.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T12:06:07.3035987+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 462. , stackTrace    at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:34:47.674 +03:00 [ERR] exception inner exception Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice. , stackTrace    at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2025-10-20 15:34:47.677 +03:00 [ERR] Error processing message (Attempt 0)
+Newtonsoft.Json.JsonSerializationException: Error converting value "{"Id":3,"ExternalId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","TenantId":2,"Amount":100.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T12:06:07.3035987+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 462.
+ ---> System.ArgumentException: Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:34:47.689 +03:00 [WRN] Message requeued for retry (Attempt 1)
+2025-10-20 15:34:51.097 +03:00 [ERR] exception occured Error converting value "{"Id":3,"ExternalId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","TenantId":2,"Amount":100.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T12:06:07.3035987+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 462. , stackTrace    at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:34:51.102 +03:00 [ERR] exception inner exception Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice. , stackTrace    at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2025-10-20 15:34:51.107 +03:00 [ERR] Error processing message (Attempt 1)
+Newtonsoft.Json.JsonSerializationException: Error converting value "{"Id":3,"ExternalId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","TenantId":2,"Amount":100.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T12:06:07.3035987+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 462.
+ ---> System.ArgumentException: Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:34:51.116 +03:00 [WRN] Message moved to DLQ after 2 failures
+2025-10-20 15:34:51.148 +03:00 [ERR] exception occured Error converting value "{"Id":4,"ExternalId":"9d5be6c7-95e3-41f6-bead-df4d29d402b9","TenantId":2,"Amount":10.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T13:01:21.96586+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 459. , stackTrace    at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:34:51.150 +03:00 [ERR] exception inner exception Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice. , stackTrace    at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2025-10-20 15:34:51.152 +03:00 [ERR] Error processing message (Attempt 0)
+Newtonsoft.Json.JsonSerializationException: Error converting value "{"Id":4,"ExternalId":"9d5be6c7-95e3-41f6-bead-df4d29d402b9","TenantId":2,"Amount":10.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T13:01:21.96586+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 459.
+ ---> System.ArgumentException: Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:34:51.159 +03:00 [WRN] Message requeued for retry (Attempt 1)
+2025-10-20 15:34:51.175 +03:00 [ERR] exception occured Error converting value "{"Id":4,"ExternalId":"9d5be6c7-95e3-41f6-bead-df4d29d402b9","TenantId":2,"Amount":10.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T13:01:21.96586+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 459. , stackTrace    at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:34:51.178 +03:00 [ERR] exception inner exception Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice. , stackTrace    at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2025-10-20 15:34:51.180 +03:00 [ERR] Error processing message (Attempt 1)
+Newtonsoft.Json.JsonSerializationException: Error converting value "{"Id":4,"ExternalId":"9d5be6c7-95e3-41f6-bead-df4d29d402b9","TenantId":2,"Amount":10.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T13:01:21.96586+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 459.
+ ---> System.ArgumentException: Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:34:51.188 +03:00 [WRN] Message moved to DLQ after 2 failures
+2025-10-20 15:53:06.729 +03:00 [DBG] Hosting starting
+2025-10-20 15:53:07.092 +03:00 [DBG] Starting bus instances: IBus
+2025-10-20 15:53:07.101 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-20 15:53:07.145 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-20 15:53:07.148 +03:00 [INF] Hosting environment: Development
+2025-10-20 15:53:07.149 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-10-20 15:53:07.153 +03:00 [DBG] Hosting started
+2025-10-20 15:53:07.153 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-20 15:53:07.188 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 64416)
+2025-10-20 15:53:07.206 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-10-20 15:53:10.520 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_wtkoyyyh3bcsyt9jbdxy9ih7ru?temporary=true"
+2025-10-20 15:53:10.528 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-20 15:53:10.646 +03:00 [ERR] exception occured Error converting value "{"Id":3,"ExternalId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","TenantId":2,"Amount":100.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T12:06:07.3035987+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 462. , stackTrace    at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:53:10.651 +03:00 [ERR] exception inner exception Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice. , stackTrace    at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2025-10-20 15:53:10.652 +03:00 [ERR] Error processing message (Attempt 0)
+Newtonsoft.Json.JsonSerializationException: Error converting value "{"Id":3,"ExternalId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","TenantId":2,"Amount":100.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T12:06:07.3035987+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 462.
+ ---> System.ArgumentException: Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:53:10.666 +03:00 [WRN] Message requeued for retry (Attempt 1)
+2025-10-20 15:53:14.119 +03:00 [ERR] exception occured Error converting value "{"Id":3,"ExternalId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","TenantId":2,"Amount":100.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T12:06:07.3035987+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 462. , stackTrace    at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:53:14.128 +03:00 [ERR] exception inner exception Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice. , stackTrace    at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2025-10-20 15:53:14.133 +03:00 [ERR] Error processing message (Attempt 1)
+Newtonsoft.Json.JsonSerializationException: Error converting value "{"Id":3,"ExternalId":"3fa85f64-5717-4562-b3fc-2c963f66afa6","TenantId":2,"Amount":100.0,"Currency":"SAR","InvoiceType":1,"InvoiceStatus":1,"IssuedAt":"2025-10-13T08:48:29.095Z","DueAt":"2025-10-13T08:48:29.095Z","PaymentReference":null,"PaymentProvider":null,"LastUpdatedDate":null,"CreatedDate":"2025-10-13T12:06:07.3035987+03:00","CreatedBy":"2","IsDeleted":false,"InvoicesLogs":[],"Payments":[],"Tenant":null}" to type 'BillingSystem.Domain.Entities.Invoice'. Path '', line 1, position 462.
+ ---> System.ArgumentException: Could not cast or convert from System.String to BillingSystem.Domain.Entities.Invoice.
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 54
+2025-10-20 15:53:14.152 +03:00 [WRN] Message moved to DLQ after 2 failures
+2025-10-20 15:53:16.014 +03:00 [INF] Processed message: invoice Id: 3
+2025-10-20 15:53:16.327 +03:00 [INF] Processed message: invoice Id: 4
+2025-10-20 15:54:45.054 +03:00 [DBG] Hosting starting
+2025-10-20 15:54:45.465 +03:00 [DBG] Starting bus instances: IBus
+2025-10-20 15:54:45.474 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-20 15:54:45.519 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-20 15:54:45.530 +03:00 [INF] Hosting environment: Development
+2025-10-20 15:54:45.532 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-10-20 15:54:45.540 +03:00 [DBG] Hosting started
+2025-10-20 15:54:45.546 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-20 15:54:45.565 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 65113)
+2025-10-20 15:54:45.578 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-10-20 15:54:45.620 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_s1ioyyyh3bcsbsdibdxy9i6abx?temporary=true"
+2025-10-20 15:54:45.626 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-20 15:55:28.256 +03:00 [INF] Processed message: invoice Id: 3
+2025-10-20 15:55:40.152 +03:00 [INF] Processed message: invoice Id: 4
+2025-10-20 15:58:01.751 +03:00 [INF] Processed message: invoice Id: 3
+2025-10-20 15:58:05.927 +03:00 [INF] Processed message: invoice Id: 4
+2025-10-20 16:00:19.196 +03:00 [INF] Processed message: invoice Id: 4
+2025-10-20 17:27:18.043 +03:00 [DBG] Hosting starting
+2025-10-20 17:27:18.875 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-10-20 17:27:18.915 +03:00 [DBG] Starting bus instances: IBus
+2025-10-20 17:27:18.920 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-20 17:27:18.955 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-20 17:27:18.958 +03:00 [INF] Hosting environment: Development
+2025-10-20 17:27:18.960 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-10-20 17:27:18.962 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-20 17:27:18.962 +03:00 [DBG] Hosting started
+2025-10-20 17:27:18.979 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 52952)
+2025-10-20 17:27:18.992 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-10-20 17:27:19.036 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_g18oyyyh3bcsycg9bdxy93ggyg?temporary=true"
+2025-10-20 17:27:19.039 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-20 17:27:24.979 +03:00 [ERR] error in RESTClient Unexpected character encountered while parsing value: <. Path '', line 1, position 1. ,    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.Infrastructure.Integration.RESTClient.GetAsync[Tresponse](Dictionary`2 parameters, String baseAddress, String suffixAddress, Dictionary`2 headers, Boolean requireAuth, String authToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Integration\RESTClient.cs:line 116
+2025-10-20 17:27:25.019 +03:00 [ERR] exception occured One or more errors occurred. (Unexpected character encountered while parsing value: <. Path '', line 1, position 1.) , stackTrace    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 29
+2025-10-20 17:27:25.022 +03:00 [ERR] exception inner exception Unexpected character encountered while parsing value: <. Path '', line 1, position 1. , stackTrace    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.Infrastructure.Integration.RESTClient.GetAsync[Tresponse](Dictionary`2 parameters, String baseAddress, String suffixAddress, Dictionary`2 headers, Boolean requireAuth, String authToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Integration\RESTClient.cs:line 116
+2025-10-20 17:27:25.025 +03:00 [INF] Processed message: invoice Id: 10002
+2025-10-20 17:28:42.657 +03:00 [DBG] Hosting starting
+2025-10-20 17:28:43.224 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-10-20 17:28:43.260 +03:00 [DBG] Starting bus instances: IBus
+2025-10-20 17:28:43.265 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-20 17:28:43.286 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-20 17:28:43.295 +03:00 [INF] Hosting environment: Development
+2025-10-20 17:28:43.297 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-10-20 17:28:43.300 +03:00 [DBG] Hosting started
+2025-10-20 17:28:43.303 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-20 17:28:43.315 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 56914)
+2025-10-20 17:28:43.362 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-10-20 17:28:43.373 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_bbuoyyyh3bcsyqwebdxy938ad6?temporary=true"
+2025-10-20 17:28:43.375 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-20 17:29:59.479 +03:00 [ERR] error in RESTClient Unexpected character encountered while parsing value: <. Path '', line 1, position 1. ,    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.Infrastructure.Integration.RESTClient.GetAsync[Tresponse](Dictionary`2 parameters, String baseAddress, String suffixAddress, Dictionary`2 headers, Boolean requireAuth, String authToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Integration\RESTClient.cs:line 116
+2025-10-20 17:30:07.515 +03:00 [ERR] exception occured One or more errors occurred. (Unexpected character encountered while parsing value: <. Path '', line 1, position 1.) , stackTrace    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 29
+2025-10-20 17:30:07.516 +03:00 [ERR] exception inner exception Unexpected character encountered while parsing value: <. Path '', line 1, position 1. , stackTrace    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.Infrastructure.Integration.RESTClient.GetAsync[Tresponse](Dictionary`2 parameters, String baseAddress, String suffixAddress, Dictionary`2 headers, Boolean requireAuth, String authToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Integration\RESTClient.cs:line 116
+2025-10-20 17:30:07.531 +03:00 [ERR] exception occured One or more errors occurred. (Unexpected character encountered while parsing value: <. Path '', line 1, position 1.) , stackTrace    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 29
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 41
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 24
+2025-10-20 17:30:07.533 +03:00 [ERR] exception inner exception Unexpected character encountered while parsing value: <. Path '', line 1, position 1. , stackTrace    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.Infrastructure.Integration.RESTClient.GetAsync[Tresponse](Dictionary`2 parameters, String baseAddress, String suffixAddress, Dictionary`2 headers, Boolean requireAuth, String authToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Integration\RESTClient.cs:line 116
+2025-10-20 17:30:07.544 +03:00 [ERR] exception occured One or more errors occurred. (Unexpected character encountered while parsing value: <. Path '', line 1, position 1.) , stackTrace    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 29
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 41
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 24
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 56
+2025-10-20 17:30:07.547 +03:00 [ERR] exception inner exception Unexpected character encountered while parsing value: <. Path '', line 1, position 1. , stackTrace    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.Infrastructure.Integration.RESTClient.GetAsync[Tresponse](Dictionary`2 parameters, String baseAddress, String suffixAddress, Dictionary`2 headers, Boolean requireAuth, String authToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Integration\RESTClient.cs:line 116
+2025-10-20 17:30:07.548 +03:00 [ERR] Error processing message (Attempt 0)
+System.AggregateException: One or more errors occurred. (Unexpected character encountered while parsing value: <. Path '', line 1, position 1.)
+ ---> Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 1, position 1.
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.Infrastructure.Integration.RESTClient.GetAsync[Tresponse](Dictionary`2 parameters, String baseAddress, String suffixAddress, Dictionary`2 headers, Boolean requireAuth, String authToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Integration\RESTClient.cs:line 116
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 29
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 41
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 24
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 56
+2025-10-20 17:30:07.560 +03:00 [WRN] Message requeued for retry (Attempt 1)
+2025-10-20 17:30:19.337 +03:00 [ERR] error in RESTClient Unexpected character encountered while parsing value: <. Path '', line 1, position 1. ,    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.Infrastructure.Integration.RESTClient.GetAsync[Tresponse](Dictionary`2 parameters, String baseAddress, String suffixAddress, Dictionary`2 headers, Boolean requireAuth, String authToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Integration\RESTClient.cs:line 116
+2025-10-20 17:30:19.385 +03:00 [ERR] exception occured One or more errors occurred. (Unexpected character encountered while parsing value: <. Path '', line 1, position 1.) , stackTrace    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 29
+2025-10-20 17:30:19.388 +03:00 [ERR] exception inner exception Unexpected character encountered while parsing value: <. Path '', line 1, position 1. , stackTrace    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.Infrastructure.Integration.RESTClient.GetAsync[Tresponse](Dictionary`2 parameters, String baseAddress, String suffixAddress, Dictionary`2 headers, Boolean requireAuth, String authToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Integration\RESTClient.cs:line 116
+2025-10-20 17:30:19.409 +03:00 [ERR] exception occured One or more errors occurred. (Unexpected character encountered while parsing value: <. Path '', line 1, position 1.) , stackTrace    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 29
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 41
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 24
+2025-10-20 17:30:19.411 +03:00 [ERR] exception inner exception Unexpected character encountered while parsing value: <. Path '', line 1, position 1. , stackTrace    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.Infrastructure.Integration.RESTClient.GetAsync[Tresponse](Dictionary`2 parameters, String baseAddress, String suffixAddress, Dictionary`2 headers, Boolean requireAuth, String authToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Integration\RESTClient.cs:line 116
+2025-10-20 17:30:19.432 +03:00 [ERR] exception occured One or more errors occurred. (Unexpected character encountered while parsing value: <. Path '', line 1, position 1.) , stackTrace    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 29
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 41
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 24
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 56
+2025-10-20 17:30:19.434 +03:00 [ERR] exception inner exception Unexpected character encountered while parsing value: <. Path '', line 1, position 1. , stackTrace    at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.Infrastructure.Integration.RESTClient.GetAsync[Tresponse](Dictionary`2 parameters, String baseAddress, String suffixAddress, Dictionary`2 headers, Boolean requireAuth, String authToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Integration\RESTClient.cs:line 116
+2025-10-20 17:30:19.435 +03:00 [ERR] Error processing message (Attempt 1)
+System.AggregateException: One or more errors occurred. (Unexpected character encountered while parsing value: <. Path '', line 1, position 1.)
+ ---> Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 1, position 1.
+   at Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsString()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BillingSystem.Infrastructure.Integration.RESTClient.GetAsync[Tresponse](Dictionary`2 parameters, String baseAddress, String suffixAddress, Dictionary`2 headers, Boolean requireAuth, String authToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Integration\RESTClient.cs:line 116
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 29
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 41
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 24
+   at BillingSystem.PaymentOrchestrator.Worker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\Worker.cs:line 56
+2025-10-20 17:30:19.441 +03:00 [WRN] Message moved to DLQ after 2 failures
+2025-10-20 17:36:48.286 +03:00 [DBG] Hosting starting
+2025-10-20 17:36:48.822 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-10-20 17:36:48.857 +03:00 [DBG] Starting bus instances: IBus
+2025-10-20 17:36:48.864 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-20 17:36:48.888 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-20 17:36:48.897 +03:00 [INF] Hosting environment: Development
+2025-10-20 17:36:48.900 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-10-20 17:36:48.902 +03:00 [DBG] Hosting started
+2025-10-20 17:36:48.902 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-20 17:36:48.923 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 56931)
+2025-10-20 17:36:48.975 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_1tsyyyyh3bcsb9d7bdxy93o38o?temporary=true"
+2025-10-20 17:36:48.977 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-20 17:36:48.980 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-10-20 17:37:29.411 +03:00 [ERR] exception occured Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'BillingServiceDBContext'. , stackTrace    at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BillingSystem.Infrastructure.Persistence.EF.InvoiceRepository.Update(Invoice entity) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Persistence\EF\InvoiceRepository.cs:line 94

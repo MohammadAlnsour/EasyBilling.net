@@ -1,0 +1,12 @@
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.SharedKernel\bin\Release\net8.0\BillingSystem.SharedKernel.deps.json
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.SharedKernel\bin\Release\net8.0\BillingSystem.SharedKernel.dll
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.SharedKernel\bin\Release\net8.0\BillingSystem.SharedKernel.pdb
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.SharedKernel\obj\Release\net8.0\BillingSystem.SharedKernel.csproj.AssemblyReference.cache
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.SharedKernel\obj\Release\net8.0\BillingSystem.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.SharedKernel\obj\Release\net8.0\BillingSystem.SharedKernel.AssemblyInfoInputs.cache
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.SharedKernel\obj\Release\net8.0\BillingSystem.SharedKernel.AssemblyInfo.cs
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.SharedKernel\obj\Release\net8.0\BillingSystem.SharedKernel.csproj.CoreCompileInputs.cache
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.SharedKernel\obj\Release\net8.0\BillingSystem.SharedKernel.dll
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.SharedKernel\obj\Release\net8.0\refint\BillingSystem.SharedKernel.dll
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.SharedKernel\obj\Release\net8.0\BillingSystem.SharedKernel.pdb
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.SharedKernel\obj\Release\net8.0\ref\BillingSystem.SharedKernel.dll

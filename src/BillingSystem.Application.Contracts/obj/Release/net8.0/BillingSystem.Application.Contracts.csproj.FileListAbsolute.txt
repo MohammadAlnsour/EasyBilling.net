@@ -1,0 +1,17 @@
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\bin\Release\net8.0\BillingSystem.Application.Contracts.deps.json
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\bin\Release\net8.0\BillingSystem.Application.Contracts.dll
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\bin\Release\net8.0\BillingSystem.Application.Contracts.pdb
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\bin\Release\net8.0\BillingSystem.Domain.Contracts.dll
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\bin\Release\net8.0\BillingSystem.Domain.dll
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\bin\Release\net8.0\BillingSystem.Domain.pdb
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\bin\Release\net8.0\BillingSystem.Domain.Contracts.pdb
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\obj\Release\net8.0\BillingSystem.Application.Contracts.csproj.AssemblyReference.cache
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\obj\Release\net8.0\BillingSystem.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\obj\Release\net8.0\BillingSystem.Application.Contracts.AssemblyInfoInputs.cache
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\obj\Release\net8.0\BillingSystem.Application.Contracts.AssemblyInfo.cs
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\obj\Release\net8.0\BillingSystem.Application.Contracts.csproj.CoreCompileInputs.cache
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\obj\Release\net8.0\BillingS.B7DE0E94.Up2Date
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\obj\Release\net8.0\BillingSystem.Application.Contracts.dll
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\obj\Release\net8.0\refint\BillingSystem.Application.Contracts.dll
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\obj\Release\net8.0\BillingSystem.Application.Contracts.pdb
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Application.Contracts\obj\Release\net8.0\ref\BillingSystem.Application.Contracts.dll

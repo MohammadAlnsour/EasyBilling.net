@@ -1,0 +1,311 @@
+2025-10-14 12:40:18.293 +03:00 [DBG] Hosting starting
+2025-10-14 12:40:18.804 +03:00 [DBG] Starting bus instances: IBus
+2025-10-14 12:40:18.814 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-14 12:40:20.931 +03:00 [INF] Worker running at: "2025-10-14T12:40:20.9312905+03:00"
+2025-10-14 12:40:20.933 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-14 12:40:20.945 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 51682)
+2025-10-14 12:40:21.005 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_q1boyyyqqiq47czmbdxysbpxgk?temporary=true"
+2025-10-14 12:40:21.007 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-14 12:40:21.134 +03:00 [ERR] exception occured The type initializer for 'System.Data.SqlClient.TdsParser' threw an exception. , stackTrace    at System.Data.SqlClient.TdsParser..ctor(Boolean MARS, Boolean fAsynchronous)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TableDependency.SqlClient.SqlTableDependency`1.CheckIfConnectionStringIsValid()
+   at TableDependency.SqlClient.Base.TableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType dmlTriggerType, Boolean executeUserPermissionCheck)
+   at TableDependency.SqlClient.SqlTableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType notifyOn, Boolean executeUserPermissionCheck, Boolean includeOldValues)
+   at BillingSystem.OutboxProcessor.Worker.StartTableDependency() in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 64
+   at BillingSystem.OutboxProcessor.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 42
+2025-10-14 12:40:21.139 +03:00 [ERR] exception inner exception The type initializer for 'System.Data.SqlClient.SNILoadHandle' threw an exception. , stackTrace    at System.Data.SqlClient.TdsParser..cctor()
+2025-10-14 12:40:21.154 +03:00 [ERR] Hosting failed to start
+System.TypeInitializationException: The type initializer for 'System.Data.SqlClient.TdsParser' threw an exception.
+ ---> System.TypeInitializationException: The type initializer for 'System.Data.SqlClient.SNILoadHandle' threw an exception.
+ ---> System.DllNotFoundException: Unable to load DLL 'sni.dll' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at System.Data.SqlClient.SNINativeMethodWrapper.SNIInitialize(IntPtr pmo)
+   at System.Data.SqlClient.SNINativeMethodWrapper.SNIInitialize()
+   at System.Data.SqlClient.SNILoadHandle..ctor()
+   at System.Data.SqlClient.SNILoadHandle..cctor()
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.TdsParser..cctor()
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.TdsParser..ctor(Boolean MARS, Boolean fAsynchronous)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TableDependency.SqlClient.SqlTableDependency`1.CheckIfConnectionStringIsValid()
+   at TableDependency.SqlClient.Base.TableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType dmlTriggerType, Boolean executeUserPermissionCheck)
+   at TableDependency.SqlClient.SqlTableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType notifyOn, Boolean executeUserPermissionCheck, Boolean includeOldValues)
+   at BillingSystem.OutboxProcessor.Worker.StartTableDependency() in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 64
+   at BillingSystem.OutboxProcessor.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 42
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-10-14 12:40:21.199 +03:00 [DBG] Stopping bus instances: IBus
+2025-10-14 12:40:21.202 +03:00 [DBG] Stopping bus: "rabbitmq://localhost/"
+2025-10-14 12:40:21.207 +03:00 [DBG] Endpoint Stopping: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_q1boyyyqqiq47czmbdxysbpxgk?temporary=true"
+2025-10-14 12:40:21.211 +03:00 [DBG] Endpoint Completed: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_q1boyyyqqiq47czmbdxysbpxgk?temporary=true"
+2025-10-14 12:40:21.231 +03:00 [DBG] Disconnect: guest@localhost:5672/
+2025-10-14 12:40:21.235 +03:00 [DBG] Disconnected: guest@localhost:5672/
+2025-10-14 12:40:21.236 +03:00 [INF] Bus stopped: "rabbitmq://localhost/"
+2025-10-14 13:29:51.172 +03:00 [DBG] Hosting starting
+2025-10-14 13:29:51.567 +03:00 [DBG] Starting bus instances: IBus
+2025-10-14 13:29:51.573 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-14 13:29:51.602 +03:00 [INF] Worker running at: "2025-10-14T13:29:51.6020039+03:00"
+2025-10-14 13:29:51.632 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-14 13:29:51.656 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 51562)
+2025-10-14 13:29:51.720 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_rbyyyyyxgiq4hykpbdxysdr5gy?temporary=true"
+2025-10-14 13:29:51.728 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-14 13:29:51.815 +03:00 [ERR] exception occured The type initializer for 'System.Data.SqlClient.TdsParser' threw an exception. , stackTrace    at System.Data.SqlClient.TdsParser..ctor(Boolean MARS, Boolean fAsynchronous)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TableDependency.SqlClient.SqlTableDependency`1.CheckIfConnectionStringIsValid()
+   at TableDependency.SqlClient.Base.TableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType dmlTriggerType, Boolean executeUserPermissionCheck)
+   at TableDependency.SqlClient.SqlTableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType notifyOn, Boolean executeUserPermissionCheck, Boolean includeOldValues)
+   at BillingSystem.OutboxProcessor.Worker.StartTableDependency() in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 64
+   at BillingSystem.OutboxProcessor.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 42
+2025-10-14 13:29:51.820 +03:00 [ERR] exception inner exception The type initializer for 'System.Data.SqlClient.SNILoadHandle' threw an exception. , stackTrace    at System.Data.SqlClient.TdsParser..cctor()
+2025-10-14 13:29:51.837 +03:00 [ERR] Hosting failed to start
+System.TypeInitializationException: The type initializer for 'System.Data.SqlClient.TdsParser' threw an exception.
+ ---> System.TypeInitializationException: The type initializer for 'System.Data.SqlClient.SNILoadHandle' threw an exception.
+ ---> System.DllNotFoundException: Unable to load DLL 'sni.dll' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at System.Data.SqlClient.SNINativeMethodWrapper.SNIInitialize(IntPtr pmo)
+   at System.Data.SqlClient.SNINativeMethodWrapper.SNIInitialize()
+   at System.Data.SqlClient.SNILoadHandle..ctor()
+   at System.Data.SqlClient.SNILoadHandle..cctor()
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.TdsParser..cctor()
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.TdsParser..ctor(Boolean MARS, Boolean fAsynchronous)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TableDependency.SqlClient.SqlTableDependency`1.CheckIfConnectionStringIsValid()
+   at TableDependency.SqlClient.Base.TableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType dmlTriggerType, Boolean executeUserPermissionCheck)
+   at TableDependency.SqlClient.SqlTableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType notifyOn, Boolean executeUserPermissionCheck, Boolean includeOldValues)
+   at BillingSystem.OutboxProcessor.Worker.StartTableDependency() in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 64
+   at BillingSystem.OutboxProcessor.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 42
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-10-14 13:29:51.901 +03:00 [DBG] Stopping bus instances: IBus
+2025-10-14 13:29:51.905 +03:00 [DBG] Stopping bus: "rabbitmq://localhost/"
+2025-10-14 13:29:51.911 +03:00 [DBG] Endpoint Stopping: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_rbyyyyyxgiq4hykpbdxysdr5gy?temporary=true"
+2025-10-14 13:29:51.916 +03:00 [DBG] Endpoint Completed: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_rbyyyyyxgiq4hykpbdxysdr5gy?temporary=true"
+2025-10-14 13:29:51.943 +03:00 [DBG] Disconnect: guest@localhost:5672/
+2025-10-14 13:29:51.948 +03:00 [DBG] Disconnected: guest@localhost:5672/
+2025-10-14 13:29:51.950 +03:00 [INF] Bus stopped: "rabbitmq://localhost/"
+2025-10-14 13:30:44.113 +03:00 [DBG] Hosting starting
+2025-10-14 13:30:44.495 +03:00 [DBG] Starting bus instances: IBus
+2025-10-14 13:30:44.500 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-14 13:30:44.528 +03:00 [INF] Worker running at: "2025-10-14T13:30:44.5274774+03:00"
+2025-10-14 13:30:44.617 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-14 13:30:44.642 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 51614)
+2025-10-14 13:30:44.785 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_ptxoyyyxgiq47tgobdxysdf5np?temporary=true"
+2025-10-14 13:30:44.801 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-14 13:30:44.864 +03:00 [ERR] exception occured The type initializer for 'System.Data.SqlClient.TdsParser' threw an exception. , stackTrace    at System.Data.SqlClient.TdsParser..ctor(Boolean MARS, Boolean fAsynchronous)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TableDependency.SqlClient.SqlTableDependency`1.CheckIfConnectionStringIsValid()
+   at TableDependency.SqlClient.Base.TableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType dmlTriggerType, Boolean executeUserPermissionCheck)
+   at TableDependency.SqlClient.SqlTableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType notifyOn, Boolean executeUserPermissionCheck, Boolean includeOldValues)
+   at BillingSystem.OutboxProcessor.Worker.StartTableDependency() in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 64
+   at BillingSystem.OutboxProcessor.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 42
+2025-10-14 13:30:44.873 +03:00 [ERR] exception inner exception The type initializer for 'System.Data.SqlClient.SNILoadHandle' threw an exception. , stackTrace    at System.Data.SqlClient.TdsParser..cctor()
+2025-10-14 13:30:44.920 +03:00 [ERR] Hosting failed to start
+System.TypeInitializationException: The type initializer for 'System.Data.SqlClient.TdsParser' threw an exception.
+ ---> System.TypeInitializationException: The type initializer for 'System.Data.SqlClient.SNILoadHandle' threw an exception.
+ ---> System.DllNotFoundException: Unable to load DLL 'sni.dll' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at System.Data.SqlClient.SNINativeMethodWrapper.SNIInitialize(IntPtr pmo)
+   at System.Data.SqlClient.SNINativeMethodWrapper.SNIInitialize()
+   at System.Data.SqlClient.SNILoadHandle..ctor()
+   at System.Data.SqlClient.SNILoadHandle..cctor()
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.TdsParser..cctor()
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.TdsParser..ctor(Boolean MARS, Boolean fAsynchronous)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TableDependency.SqlClient.SqlTableDependency`1.CheckIfConnectionStringIsValid()
+   at TableDependency.SqlClient.Base.TableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType dmlTriggerType, Boolean executeUserPermissionCheck)
+   at TableDependency.SqlClient.SqlTableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType notifyOn, Boolean executeUserPermissionCheck, Boolean includeOldValues)
+   at BillingSystem.OutboxProcessor.Worker.StartTableDependency() in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 64
+   at BillingSystem.OutboxProcessor.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 42
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-10-14 13:30:45.088 +03:00 [DBG] Stopping bus instances: IBus
+2025-10-14 13:30:45.092 +03:00 [DBG] Stopping bus: "rabbitmq://localhost/"
+2025-10-14 13:30:45.101 +03:00 [DBG] Endpoint Stopping: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_ptxoyyyxgiq47tgobdxysdf5np?temporary=true"
+2025-10-14 13:30:45.108 +03:00 [DBG] Endpoint Completed: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_ptxoyyyxgiq47tgobdxysdf5np?temporary=true"
+2025-10-14 13:30:45.143 +03:00 [DBG] Disconnect: guest@localhost:5672/
+2025-10-14 13:30:45.150 +03:00 [DBG] Disconnected: guest@localhost:5672/
+2025-10-14 13:30:45.153 +03:00 [INF] Bus stopped: "rabbitmq://localhost/"
+2025-10-14 14:30:55.338 +03:00 [DBG] Hosting starting
+2025-10-14 14:30:55.732 +03:00 [DBG] Starting bus instances: IBus
+2025-10-14 14:30:55.737 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-14 14:30:55.767 +03:00 [INF] Worker running at: "2025-10-14T14:30:55.7670439+03:00"
+2025-10-14 14:30:55.795 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-14 14:30:55.822 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 58242)
+2025-10-14 14:30:55.887 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_qnmoyyyxgiq47qm1bdxysfjdgn?temporary=true"
+2025-10-14 14:30:55.900 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-14 14:30:55.951 +03:00 [ERR] exception occured The type initializer for 'System.Data.SqlClient.TdsParser' threw an exception. , stackTrace    at System.Data.SqlClient.TdsParser..ctor(Boolean MARS, Boolean fAsynchronous)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TableDependency.SqlClient.SqlTableDependency`1.CheckIfConnectionStringIsValid()
+   at TableDependency.SqlClient.Base.TableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType dmlTriggerType, Boolean executeUserPermissionCheck)
+   at TableDependency.SqlClient.SqlTableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType notifyOn, Boolean executeUserPermissionCheck, Boolean includeOldValues)
+   at BillingSystem.OutboxProcessor.Worker.StartTableDependency() in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 64
+   at BillingSystem.OutboxProcessor.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 42
+2025-10-14 14:30:55.957 +03:00 [ERR] exception inner exception The type initializer for 'System.Data.SqlClient.SNILoadHandle' threw an exception. , stackTrace    at System.Data.SqlClient.TdsParser..cctor()
+2025-10-14 14:30:55.974 +03:00 [ERR] Hosting failed to start
+System.TypeInitializationException: The type initializer for 'System.Data.SqlClient.TdsParser' threw an exception.
+ ---> System.TypeInitializationException: The type initializer for 'System.Data.SqlClient.SNILoadHandle' threw an exception.
+ ---> System.DllNotFoundException: Unable to load DLL 'sni.dll' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at System.Data.SqlClient.SNINativeMethodWrapper.SNIInitialize(IntPtr pmo)
+   at System.Data.SqlClient.SNINativeMethodWrapper.SNIInitialize()
+   at System.Data.SqlClient.SNILoadHandle..ctor()
+   at System.Data.SqlClient.SNILoadHandle..cctor()
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.TdsParser..cctor()
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.TdsParser..ctor(Boolean MARS, Boolean fAsynchronous)
+   at System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   at System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean redirectedUserInstance)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at TableDependency.SqlClient.SqlTableDependency`1.CheckIfConnectionStringIsValid()
+   at TableDependency.SqlClient.Base.TableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType dmlTriggerType, Boolean executeUserPermissionCheck)
+   at TableDependency.SqlClient.SqlTableDependency`1..ctor(String connectionString, String tableName, String schemaName, IModelToTableMapper`1 mapper, IUpdateOfModel`1 updateOf, ITableDependencyFilter filter, DmlTriggerType notifyOn, Boolean executeUserPermissionCheck, Boolean includeOldValues)
+   at BillingSystem.OutboxProcessor.Worker.StartTableDependency() in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 64
+   at BillingSystem.OutboxProcessor.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor\Worker.cs:line 42
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-10-14 14:30:56.033 +03:00 [DBG] Stopping bus instances: IBus
+2025-10-14 14:30:56.036 +03:00 [DBG] Stopping bus: "rabbitmq://localhost/"
+2025-10-14 14:30:56.041 +03:00 [DBG] Endpoint Stopping: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_qnmoyyyxgiq47qm1bdxysfjdgn?temporary=true"
+2025-10-14 14:30:56.047 +03:00 [DBG] Endpoint Completed: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_qnmoyyyxgiq47qm1bdxysfjdgn?temporary=true"
+2025-10-14 14:30:56.078 +03:00 [DBG] Disconnect: guest@localhost:5672/
+2025-10-14 14:30:56.084 +03:00 [DBG] Disconnected: guest@localhost:5672/
+2025-10-14 14:30:56.086 +03:00 [INF] Bus stopped: "rabbitmq://localhost/"
+2025-10-14 14:31:59.697 +03:00 [DBG] Hosting starting
+2025-10-14 14:32:00.054 +03:00 [DBG] Starting bus instances: IBus
+2025-10-14 14:32:00.058 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-14 14:32:00.089 +03:00 [INF] Worker running at: "2025-10-14T14:32:00.0885126+03:00"
+2025-10-14 14:32:00.101 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-14 14:32:00.102 +03:00 [INF] Hosting environment: Development
+2025-10-14 14:32:00.103 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor
+2025-10-14 14:32:00.105 +03:00 [DBG] Hosting started
+2025-10-14 14:32:00.106 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-14 14:32:00.119 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 62255)
+2025-10-14 14:32:00.168 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_w1eoyyyxgiq4h4yhbdxysfkky7?temporary=true"
+2025-10-14 14:32:00.171 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-14 15:43:27.874 +03:00 [DBG] Hosting starting
+2025-10-14 15:43:28.226 +03:00 [DBG] Starting bus instances: IBus
+2025-10-14 15:43:28.231 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-14 15:43:28.256 +03:00 [INF] Worker running at: "2025-10-14T15:43:28.2565628+03:00"
+2025-10-14 15:43:28.261 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-14 15:43:28.267 +03:00 [INF] Hosting environment: Development
+2025-10-14 15:43:28.268 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor
+2025-10-14 15:43:28.269 +03:00 [DBG] Hosting started
+2025-10-14 15:43:28.273 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-14 15:43:28.287 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 52284)
+2025-10-14 15:43:28.337 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_pnzyyyyxgiq47hmfbdxys84gyc?temporary=true"
+2025-10-14 15:43:28.339 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-14 15:43:58.266 +03:00 [INF] Worker running at: "2025-10-14T15:43:58.2664900+03:00"
+2025-10-14 15:44:28.279 +03:00 [INF] Worker running at: "2025-10-14T15:44:28.2796637+03:00"
+2025-10-14 15:44:58.287 +03:00 [INF] Worker running at: "2025-10-14T15:44:58.2878485+03:00"
+2025-10-14 15:45:28.307 +03:00 [INF] Worker running at: "2025-10-14T15:45:28.3076142+03:00"
+2025-10-14 15:45:58.317 +03:00 [INF] Worker running at: "2025-10-14T15:45:58.3173006+03:00"
+2025-10-14 15:46:28.328 +03:00 [INF] Worker running at: "2025-10-14T15:46:28.3287988+03:00"
+2025-10-14 15:46:58.336 +03:00 [INF] Worker running at: "2025-10-14T15:46:58.3363569+03:00"
+2025-10-14 15:47:28.352 +03:00 [INF] Worker running at: "2025-10-14T15:47:28.3528281+03:00"
+2025-10-14 15:47:58.367 +03:00 [INF] Worker running at: "2025-10-14T15:47:58.3678787+03:00"
+2025-10-14 15:48:28.384 +03:00 [INF] Worker running at: "2025-10-14T15:48:28.3846778+03:00"
+2025-10-14 15:48:58.393 +03:00 [INF] Worker running at: "2025-10-14T15:48:58.3938540+03:00"

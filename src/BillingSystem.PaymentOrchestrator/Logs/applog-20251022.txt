@@ -1,0 +1,36 @@
+2025-10-22 16:56:56.194 +03:00 [DBG] Hosting starting
+2025-10-22 16:56:56.903 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-10-22 16:56:56.948 +03:00 [DBG] Starting bus instances: IBus
+2025-10-22 16:56:56.955 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-22 16:56:56.985 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-22 16:56:56.987 +03:00 [INF] Hosting environment: Development
+2025-10-22 16:56:56.997 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-10-22 16:56:57.000 +03:00 [DBG] Hosting started
+2025-10-22 16:56:57.012 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-22 16:56:57.030 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 51513)
+2025-10-22 16:56:57.074 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-10-22 16:56:57.084 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_a19yyyyh3bcsb9aabdxbnhsh8s?temporary=true"
+2025-10-22 16:56:57.088 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-22 16:57:04.990 +03:00 [ERR] exception occured Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'BillingServiceDBContext'. , stackTrace    at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BillingSystem.Infrastructure.Persistence.EF.InvoiceRepository.Update(Invoice entity) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.Infrastructure\Persistence\EF\InvoiceRepository.cs:line 94
+2025-10-22 16:57:04.997 +03:00 [INF] Processed message: invoice Id: 10002
+2025-10-22 17:22:13.531 +03:00 [DBG] Hosting starting
+2025-10-22 17:22:14.084 +03:00 [DBG] Starting bus instances: IBus
+2025-10-22 17:22:14.093 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-22 17:22:14.140 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-22 17:22:14.150 +03:00 [INF] Hosting environment: Development
+2025-10-22 17:22:14.152 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-10-22 17:22:14.162 +03:00 [DBG] Hosting started
+2025-10-22 17:22:14.167 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-22 17:22:14.189 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 57194)
+2025-10-22 17:22:14.204 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-10-22 17:22:14.242 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_y14oyyyh3bcsyzifbdxbn7ufdf?temporary=true"
+2025-10-22 17:22:14.245 +03:00 [INF] Bus started: "rabbitmq://localhost/"

@@ -1,0 +1,24 @@
+2025-11-05 10:24:18.651 +03:00 [DBG] Hosting starting
+2025-11-05 10:24:19.064 +03:00 [DBG] Starting bus instances: IBus
+2025-11-05 10:24:19.071 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-11-05 10:24:19.113 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-05 10:24:19.123 +03:00 [INF] Hosting environment: Development
+2025-11-05 10:24:19.126 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-11-05 10:24:19.128 +03:00 [DBG] Hosting started
+2025-11-05 10:24:19.132 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-11-05 10:24:19.152 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 51959)
+2025-11-05 10:24:19.182 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-11-05 10:24:19.201 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_yukyyyyh3bcsbxp4bdxbaxnini?temporary=true"
+2025-11-05 10:24:19.205 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-11-05 13:09:36.468 +03:00 [DBG] Hosting starting
+2025-11-05 13:09:36.877 +03:00 [DBG] Starting bus instances: IBus
+2025-11-05 13:09:36.885 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-11-05 13:09:36.925 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-05 13:09:36.936 +03:00 [INF] Hosting environment: Development
+2025-11-05 13:09:36.939 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-11-05 13:09:36.950 +03:00 [DBG] Hosting started
+2025-11-05 13:09:36.954 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-11-05 13:09:36.975 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 53417)
+2025-11-05 13:09:37.011 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-11-05 13:09:37.018 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_cyioyyyh3bcsbgu3bdxbaw5cgw?temporary=true"
+2025-11-05 13:09:37.020 +03:00 [INF] Bus started: "rabbitmq://localhost/"

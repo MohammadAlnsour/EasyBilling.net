@@ -1,0 +1,13 @@
+2025-11-02 16:38:08.155 +03:00 [DBG] Hosting starting
+2025-11-02 16:38:08.716 +03:00 [DBG] Starting bus instances: IBus
+2025-11-02 16:38:08.726 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-11-02 16:38:08.757 +03:00 [INF] Worker running at: "2025-11-02T16:38:08.7568444+03:00"
+2025-11-02 16:38:08.801 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-11-02 16:38:08.817 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 53711)
+2025-11-02 16:38:08.872 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_f1foyyyh3bcsyhjzbdxbwfexbk?temporary=true"
+2025-11-02 16:38:08.877 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-11-02 16:38:09.262 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-02 16:38:15.102 +03:00 [DBG] Entity Framework Core 9.0.9 initialized 'BillingServiceDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.9' with options: EngineType=SqlServer 
+2025-11-02 16:38:15.233 +03:00 [DBG] Compiling query expression: 
+'DbSet<OutboxEvent>().FromSql(EXECUTE dbo.GetNextPendingRowsForProcessing {0}, __p_0)
+'

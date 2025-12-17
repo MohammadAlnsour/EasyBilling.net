@@ -1,0 +1,42 @@
+2025-10-13 15:32:51.525 +03:00 [DBG] Hosting starting
+2025-10-13 15:32:51.749 +03:00 [DBG] Starting bus instances: IBus
+2025-10-13 15:32:51.753 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-10-13 15:32:51.769 +03:00 [INF] Worker running at: "2025-10-13T15:32:51.7688145+03:00"
+2025-10-13 15:32:51.774 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-13 15:32:51.775 +03:00 [INF] Hosting environment: Development
+2025-10-13 15:32:51.777 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.OutboxProcessor
+2025-10-13 15:32:51.778 +03:00 [DBG] Hosting started
+2025-10-13 15:32:51.790 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-10-13 15:32:51.956 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 58106)
+2025-10-13 15:32:52.013 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_wb1yyyyh3bcsb1zjbdxywifyna?temporary=true"
+2025-10-13 15:32:52.015 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-10-13 15:32:56.785 +03:00 [INF] Worker running at: "2025-10-13T15:32:56.7850580+03:00"
+2025-10-13 15:33:01.801 +03:00 [INF] Worker running at: "2025-10-13T15:33:01.8013253+03:00"
+2025-10-13 15:33:06.811 +03:00 [INF] Worker running at: "2025-10-13T15:33:06.8111988+03:00"
+2025-10-13 15:33:11.820 +03:00 [INF] Worker running at: "2025-10-13T15:33:11.8204448+03:00"
+2025-10-13 15:33:16.830 +03:00 [INF] Worker running at: "2025-10-13T15:33:16.8303974+03:00"
+2025-10-13 15:33:21.832 +03:00 [INF] Worker running at: "2025-10-13T15:33:21.8325400+03:00"
+2025-10-13 15:33:26.837 +03:00 [INF] Worker running at: "2025-10-13T15:33:26.8372569+03:00"
+2025-10-13 15:33:31.840 +03:00 [INF] Worker running at: "2025-10-13T15:33:31.8407536+03:00"
+2025-10-13 15:33:36.851 +03:00 [INF] Worker running at: "2025-10-13T15:33:36.8517565+03:00"
+2025-10-13 15:33:41.857 +03:00 [INF] Worker running at: "2025-10-13T15:33:41.8577305+03:00"
+2025-10-13 15:33:46.877 +03:00 [INF] Worker running at: "2025-10-13T15:33:46.8772235+03:00"
+2025-10-13 15:33:51.892 +03:00 [INF] Worker running at: "2025-10-13T15:33:51.8925625+03:00"
+2025-10-13 15:33:56.894 +03:00 [INF] Worker running at: "2025-10-13T15:33:56.8945017+03:00"
+2025-10-13 15:34:01.898 +03:00 [INF] Worker running at: "2025-10-13T15:34:01.8981370+03:00"
+2025-10-13 15:34:06.902 +03:00 [INF] Worker running at: "2025-10-13T15:34:06.9020442+03:00"
+2025-10-13 15:34:11.911 +03:00 [INF] Worker running at: "2025-10-13T15:34:11.9111319+03:00"
+2025-10-13 15:34:16.922 +03:00 [INF] Worker running at: "2025-10-13T15:34:16.9228665+03:00"
+2025-10-13 15:34:58.825 +03:00 [INF] Worker running at: "2025-10-13T15:34:58.8251325+03:00"
+2025-10-13 15:35:03.831 +03:00 [INF] Worker running at: "2025-10-13T15:35:03.8314959+03:00"
+2025-10-13 15:35:08.839 +03:00 [INF] Worker running at: "2025-10-13T15:35:08.8391381+03:00"
+2025-10-13 15:35:10.399 +03:00 [INF] Application is shutting down...
+2025-10-13 15:35:10.406 +03:00 [DBG] Hosting stopping
+2025-10-13 15:35:10.442 +03:00 [DBG] Stopping bus instances: IBus
+2025-10-13 15:35:10.445 +03:00 [DBG] Stopping bus: "rabbitmq://localhost/"
+2025-10-13 15:35:10.449 +03:00 [DBG] Endpoint Stopping: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_wb1yyyyh3bcsb1zjbdxywifyna?temporary=true"
+2025-10-13 15:35:10.453 +03:00 [DBG] Endpoint Completed: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemO_bus_wb1yyyyh3bcsb1zjbdxywifyna?temporary=true"
+2025-10-13 15:35:10.493 +03:00 [DBG] Disconnect: guest@localhost:5672/
+2025-10-13 15:35:10.503 +03:00 [DBG] Disconnected: guest@localhost:5672/
+2025-10-13 15:35:10.505 +03:00 [INF] Bus stopped: "rabbitmq://localhost/"
+2025-10-13 15:35:10.506 +03:00 [DBG] Hosting stopped

@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "src\\BillingSystem.API\\BillingSystem.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "src\\BillingSystem.OutboxProcessor\\BillingSystem.OutboxProcessor.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "src\\BillingSystem.PaymentOrchestrator\\BillingSystem.PaymentOrchestrator.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

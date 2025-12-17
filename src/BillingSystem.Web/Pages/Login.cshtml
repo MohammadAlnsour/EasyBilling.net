@@ -1,0 +1,22 @@
+﻿@page
+@model BillingSystem.Web.Pages.LoginModel
+@{
+}
+
+
+<ul>
+	@if (HttpContext.User.Identity!.IsAuthenticated)
+	{
+		<li class="nav-item">
+			<a class="nav-link text-dark" asp-area="" asp-page="/Logout">Logout</a>
+		</li>
+
+		<span class="nav-link text-dark">Hi @HttpContext.User.Identity.Name</span>
+	}
+	else
+	{
+		<li class="nav-item">
+			<a class="nav-link text-dark" asp-area="" asp-page="/Index">Login</a>
+		</li>
+	}
+</ul>

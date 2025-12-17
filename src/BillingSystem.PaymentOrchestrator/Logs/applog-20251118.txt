@@ -1,0 +1,230 @@
+2025-11-18 16:51:11.029 +03:00 [DBG] Hosting starting
+2025-11-18 16:51:11.454 +03:00 [DBG] Starting bus instances: IBus
+2025-11-18 16:51:11.463 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-11-18 16:51:11.493 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-18 16:51:11.496 +03:00 [INF] Hosting environment: Development
+2025-11-18 16:51:11.500 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-11-18 16:51:11.521 +03:00 [DBG] Hosting started
+2025-11-18 16:51:11.529 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-11-18 16:51:11.553 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 52340)
+2025-11-18 16:51:11.558 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-11-18 16:51:11.615 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_5bboyyyh3bcsym34bdxnpkcen4?temporary=true"
+2025-11-18 16:51:11.618 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-11-18 16:51:12.306 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-11-18 16:51:12.584 +03:00 [DBG] No relationship from 'Invoice' to 'Invoice' has been configured by convention because there are multiple properties on one entity type - {'DiscountedPrimaryInvoice'} that could be matched with the properties on the other entity type - {'InverseDiscountedPrimaryInvoice', 'InversePrimaryInvoice', 'InverseSubstitutionPrimaryInvoice', 'PrimaryInvoice', 'SubstitutionPrimaryInvoice'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-11-18 16:51:12.709 +03:00 [DBG] No relationship from 'Invoice' to 'Invoice' has been configured by convention because there are multiple properties on one entity type - {'DiscountedPrimaryInvoice'} that could be matched with the properties on the other entity type - {'InverseDiscountedPrimaryInvoice', 'InversePrimaryInvoice', 'InverseSubstitutionPrimaryInvoice', 'PrimaryInvoice', 'SubstitutionPrimaryInvoice'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-11-18 16:51:12.719 +03:00 [DBG] No relationship from 'Invoice' to 'Invoice' has been configured by convention because there are multiple properties on one entity type - {'InversePrimaryInvoice'} that could be matched with the properties on the other entity type - {'InverseSubstitutionPrimaryInvoice', 'PrimaryInvoice', 'SubstitutionPrimaryInvoice'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-11-18 16:51:12.723 +03:00 [DBG] No relationship from 'Invoice' to 'Invoice' has been configured by convention because there are multiple properties on one entity type - {'InversePrimaryInvoice'} that could be matched with the properties on the other entity type - {'InverseSubstitutionPrimaryInvoice', 'PrimaryInvoice', 'SubstitutionPrimaryInvoice'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-11-18 16:51:12.892 +03:00 [DBG] Entity Framework Core 9.0.9 initialized 'BillingServiceDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.9' with options: EngineType=SqlServer 
+2025-11-18 16:51:13.026 +03:00 [DBG] Compiling query expression: 
+'DbSet<Invoice>()
+    .SingleOrDefault(p => p.Id == __entity_Id_0)'
+2025-11-18 16:51:13.229 +03:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Invoice>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Invoice.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Invoice.Amount (decimal) Required, 1], [Property: Invoice.CancelationReasons (string) MaxLength(3000), 2], [Property: Invoice.ClientReferenceNumber (string) MaxLength(100), 3], [Property: Invoice.CreatedBy (string) Required MaxLength(50), 4], [Property: Invoice.CreatedDate (DateTime) Required, 5], [Property: Invoice.Currency (string) Required MaxLength(50), 6], [Property: Invoice.CustomerId (long) Required FK Index, 7], [Property: Invoice.DiscountedPrimaryInvoiceId (long?) FK Index, 8], [Property: Invoice.DueAt (DateTime?), 9], [Property: Invoice.ExternalId (Guid) Required Index, 10], [Property: Invoice.InvoiceNumber (string) Required MaxLength(50), 11], [Property: Invoice.InvoiceStatus (int) Required, 12], [Property: Invoice.InvoiceType (int) Required, 13], [Property: Invoice.IsDeleted (bool) Required, 14], [Property: Invoice.IsDiscounted (bool?), 15], [Property: Invoice.IsSubInvoice (bool?), 16], [Property: Invoice.IsSubstitution (bool?), 17], [Property: Invoice.IssuedAt (DateTime) Required, 18], [Property: Invoice.LastUpdatedDate (DateTime?), 19], [Property: Invoice.Metadata (string), 20], [Property: Invoice.PaymentProvider (string) MaxLength(100), 21], [Property: Invoice.PaymentReference (string) MaxLength(100), 22], [Property: Invoice.PrimaryInvoiceId (long?) FK Index, 23], [Property: Invoice.ProviderResponse (string), 24], [Property: Invoice.SubstitutionPrimaryInvoiceId (long?) FK Index, 25], [Property: Invoice.TenantId (int) Required FK Index, 26] }
+        SELECT TOP(2) i.Id, i.Amount, i.CancelationReasons, i.ClientReferenceNumber, i.CreatedBy, i.CreatedDate, i.Currency, i.CustomerID, i.DiscountedPrimaryInvoiceID, i.DueAt, i.ExternalId, i.InvoiceNumber, i.InvoiceStatus, i.InvoiceType, i.IsDeleted, i.IsDiscounted, i.IsSubInvoice, i.IsSubstitution, i.IssuedAt, i.LastUpdatedDate, i.Metadata, i.PaymentProvider, i.PaymentReference, i.PrimaryInvoiceID, i.ProviderResponse, i.SubstitutionPrimaryInvoiceID, i.TenantId
+        FROM Invoices AS i
+        WHERE i.Id == @__entity_Id_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Invoice.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Invoice.Amount (decimal) Required, 1], [Property: Invoice.CancelationReasons (string) MaxLength(3000), 2], [Property: Invoice.ClientReferenceNumber (string) MaxLength(100), 3], [Property: Invoice.CreatedBy (string) Required MaxLength(50), 4], [Property: Invoice.CreatedDate (DateTime) Required, 5], [Property: Invoice.Currency (string) Required MaxLength(50), 6], [Property: Invoice.CustomerId (long) Required FK Index, 7], [Property: Invoice.DiscountedPrimaryInvoiceId (long?) FK Index, 8], [Property: Invoice.DueAt (DateTime?), 9], [Property: Invoice.ExternalId (Guid) Required Index, 10], [Property: Invoice.InvoiceNumber (string) Required MaxLength(50), 11], [Property: Invoice.InvoiceStatus (int) Required, 12], [Property: Invoice.InvoiceType (int) Required, 13], [Property: Invoice.IsDeleted (bool) Required, 14], [Property: Invoice.IsDiscounted (bool?), 15], [Property: Invoice.IsSubInvoice (bool?), 16], [Property: Invoice.IsSubstitution (bool?), 17], [Property: Invoice.IssuedAt (DateTime) Required, 18], [Property: Invoice.LastUpdatedDate (DateTime?), 19], [Property: Invoice.Metadata (string), 20], [Property: Invoice.PaymentProvider (string) MaxLength(100), 21], [Property: Invoice.PaymentReference (string) MaxLength(100), 22], [Property: Invoice.PrimaryInvoiceId (long?) FK Index, 23], [Property: Invoice.ProviderResponse (string), 24], [Property: Invoice.SubstitutionPrimaryInvoiceId (long?) FK Index, 25], [Property: Invoice.TenantId (int) Required FK Index, 26] }
+        SELECT TOP(2) i.Id, i.Amount, i.CancelationReasons, i.ClientReferenceNumber, i.CreatedBy, i.CreatedDate, i.Currency, i.CustomerID, i.DiscountedPrimaryInvoiceID, i.DueAt, i.ExternalId, i.InvoiceNumber, i.InvoiceStatus, i.InvoiceType, i.IsDeleted, i.IsDiscounted, i.IsSubInvoice, i.IsSubstitution, i.IssuedAt, i.LastUpdatedDate, i.Metadata, i.PaymentProvider, i.PaymentReference, i.PrimaryInvoiceID, i.ProviderResponse, i.SubstitutionPrimaryInvoiceID, i.TenantId
+        FROM Invoices AS i
+        WHERE i.Id == @__entity_Id_0, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Invoice entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Invoice instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Invoice);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Invoice.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Invoice").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt64(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Invoice)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Invoice | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Invoice")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Invoice | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Invoice")]: 
+                        {
+                            return 
+                            {
+                                Invoice instance;
+                                instance = new Invoice();
+                                instance.<Id>k__BackingField = dataReader.GetInt64(0);
+                                instance.<Amount>k__BackingField = dataReader.GetDecimal(1);
+                                instance.<CancelationReasons>k__BackingField = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+                                instance.<ClientReferenceNumber>k__BackingField = dataReader.IsDBNull(3) ? default(string) : dataReader.GetString(3);
+                                instance.<CreatedBy>k__BackingField = dataReader.GetString(4);
+                                instance.<CreatedDate>k__BackingField = dataReader.GetDateTime(5);
+                                instance.<Currency>k__BackingField = dataReader.GetString(6);
+                                instance.<CustomerId>k__BackingField = dataReader.GetInt64(7);
+                                instance.<DiscountedPrimaryInvoiceId>k__BackingField = dataReader.IsDBNull(8) ? default(long?) : (long?)dataReader.GetInt64(8);
+                                instance.<DueAt>k__BackingField = dataReader.IsDBNull(9) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(9);
+                                instance.<ExternalId>k__BackingField = dataReader.GetGuid(10);
+                                instance.<InvoiceNumber>k__BackingField = dataReader.GetString(11);
+                                instance.<InvoiceStatus>k__BackingField = dataReader.GetInt32(12);
+                                instance.<InvoiceType>k__BackingField = dataReader.GetInt32(13);
+                                instance.<IsDeleted>k__BackingField = dataReader.GetBoolean(14);
+                                instance.<IsDiscounted>k__BackingField = dataReader.IsDBNull(15) ? default(bool?) : (bool?)dataReader.GetBoolean(15);
+                                instance.<IsSubInvoice>k__BackingField = dataReader.IsDBNull(16) ? default(bool?) : (bool?)dataReader.GetBoolean(16);
+                                instance.<IsSubstitution>k__BackingField = dataReader.IsDBNull(17) ? default(bool?) : (bool?)dataReader.GetBoolean(17);
+                                instance.<IssuedAt>k__BackingField = dataReader.GetDateTime(18);
+                                instance.<LastUpdatedDate>k__BackingField = dataReader.IsDBNull(19) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(19);
+                                instance.<Metadata>k__BackingField = dataReader.IsDBNull(20) ? default(string) : dataReader.GetString(20);
+                                instance.<PaymentProvider>k__BackingField = dataReader.IsDBNull(21) ? default(string) : dataReader.GetString(21);
+                                instance.<PaymentReference>k__BackingField = dataReader.IsDBNull(22) ? default(string) : dataReader.GetString(22);
+                                instance.<PrimaryInvoiceId>k__BackingField = dataReader.IsDBNull(23) ? default(long?) : (long?)dataReader.GetInt64(23);
+                                instance.<ProviderResponse>k__BackingField = dataReader.IsDBNull(24) ? default(string) : dataReader.GetString(24);
+                                instance.<SubstitutionPrimaryInvoiceId>k__BackingField = dataReader.IsDBNull(25) ? default(long?) : (long?)dataReader.GetInt64(25);
+                                instance.<TenantId>k__BackingField = dataReader.GetInt32(26);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Invoice | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Invoice")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Invoice)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: BillingSystem.Infrastructure.EF.BillingServiceDBContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2025-11-18 16:51:13.262 +03:00 [DBG] Creating DbConnection.
+2025-11-18 16:51:13.284 +03:00 [DBG] Created DbConnection. (20ms).
+2025-11-18 16:51:13.290 +03:00 [DBG] Opening connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:13.746 +03:00 [DBG] Opened connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:13.751 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-18 16:51:13.758 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (4ms).
+2025-11-18 16:51:13.766 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (15ms).
+2025-11-18 16:51:13.777 +03:00 [DBG] Executing DbCommand [Parameters=[@__entity_Id_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [i].[Id], [i].[Amount], [i].[CancelationReasons], [i].[ClientReferenceNumber], [i].[CreatedBy], [i].[CreatedDate], [i].[Currency], [i].[CustomerID], [i].[DiscountedPrimaryInvoiceID], [i].[DueAt], [i].[ExternalId], [i].[InvoiceNumber], [i].[InvoiceStatus], [i].[InvoiceType], [i].[IsDeleted], [i].[IsDiscounted], [i].[IsSubInvoice], [i].[IsSubstitution], [i].[IssuedAt], [i].[LastUpdatedDate], [i].[Metadata], [i].[PaymentProvider], [i].[PaymentReference], [i].[PrimaryInvoiceID], [i].[ProviderResponse], [i].[SubstitutionPrimaryInvoiceID], [i].[TenantId]
+FROM [Invoices] AS [i]
+WHERE [i].[Id] = @__entity_Id_0
+2025-11-18 16:51:13.873 +03:00 [INF] Executed DbCommand (98ms) [Parameters=[@__entity_Id_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [i].[Id], [i].[Amount], [i].[CancelationReasons], [i].[ClientReferenceNumber], [i].[CreatedBy], [i].[CreatedDate], [i].[Currency], [i].[CustomerID], [i].[DiscountedPrimaryInvoiceID], [i].[DueAt], [i].[ExternalId], [i].[InvoiceNumber], [i].[InvoiceStatus], [i].[InvoiceType], [i].[IsDeleted], [i].[IsDiscounted], [i].[IsSubInvoice], [i].[IsSubstitution], [i].[IssuedAt], [i].[LastUpdatedDate], [i].[Metadata], [i].[PaymentProvider], [i].[PaymentReference], [i].[PrimaryInvoiceID], [i].[ProviderResponse], [i].[SubstitutionPrimaryInvoiceID], [i].[TenantId]
+FROM [Invoices] AS [i]
+WHERE [i].[Id] = @__entity_Id_0
+2025-11-18 16:51:13.882 +03:00 [DBG] Closing data reader to 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:13.890 +03:00 [DBG] A data reader for 'GAC-BillingService' on server '.' is being disposed after spending 8ms reading results.
+2025-11-18 16:51:13.895 +03:00 [DBG] Closing connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:13.903 +03:00 [DBG] Closed connection to database 'GAC-BillingService' on server '.' (8ms).
+2025-11-18 16:51:13.907 +03:00 [DBG] 'BillingServiceDBContext' disposed.
+2025-11-18 16:51:13.912 +03:00 [DBG] Disposing connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:13.915 +03:00 [DBG] Disposed connection to database '' on server '' (3ms).
+2025-11-18 16:51:13.920 +03:00 [INF] Processed message: invoice Id: 0
+2025-11-18 16:51:13.931 +03:00 [DBG] Entity Framework Core 9.0.9 initialized 'BillingServiceDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.9' with options: EngineType=SqlServer 
+2025-11-18 16:51:13.951 +03:00 [DBG] Creating DbConnection.
+2025-11-18 16:51:13.953 +03:00 [DBG] Created DbConnection. (2ms).
+2025-11-18 16:51:13.956 +03:00 [DBG] Opening connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:13.960 +03:00 [DBG] Opened connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:13.963 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-18 16:51:13.965 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2025-11-18 16:51:13.967 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2025-11-18 16:51:13.970 +03:00 [DBG] Executing DbCommand [Parameters=[@__entity_Id_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [i].[Id], [i].[Amount], [i].[CancelationReasons], [i].[ClientReferenceNumber], [i].[CreatedBy], [i].[CreatedDate], [i].[Currency], [i].[CustomerID], [i].[DiscountedPrimaryInvoiceID], [i].[DueAt], [i].[ExternalId], [i].[InvoiceNumber], [i].[InvoiceStatus], [i].[InvoiceType], [i].[IsDeleted], [i].[IsDiscounted], [i].[IsSubInvoice], [i].[IsSubstitution], [i].[IssuedAt], [i].[LastUpdatedDate], [i].[Metadata], [i].[PaymentProvider], [i].[PaymentReference], [i].[PrimaryInvoiceID], [i].[ProviderResponse], [i].[SubstitutionPrimaryInvoiceID], [i].[TenantId]
+FROM [Invoices] AS [i]
+WHERE [i].[Id] = @__entity_Id_0
+2025-11-18 16:51:13.977 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__entity_Id_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [i].[Id], [i].[Amount], [i].[CancelationReasons], [i].[ClientReferenceNumber], [i].[CreatedBy], [i].[CreatedDate], [i].[Currency], [i].[CustomerID], [i].[DiscountedPrimaryInvoiceID], [i].[DueAt], [i].[ExternalId], [i].[InvoiceNumber], [i].[InvoiceStatus], [i].[InvoiceType], [i].[IsDeleted], [i].[IsDiscounted], [i].[IsSubInvoice], [i].[IsSubstitution], [i].[IssuedAt], [i].[LastUpdatedDate], [i].[Metadata], [i].[PaymentProvider], [i].[PaymentReference], [i].[PrimaryInvoiceID], [i].[ProviderResponse], [i].[SubstitutionPrimaryInvoiceID], [i].[TenantId]
+FROM [Invoices] AS [i]
+WHERE [i].[Id] = @__entity_Id_0
+2025-11-18 16:51:13.982 +03:00 [DBG] Closing data reader to 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:13.984 +03:00 [DBG] A data reader for 'GAC-BillingService' on server '.' is being disposed after spending 2ms reading results.
+2025-11-18 16:51:13.987 +03:00 [DBG] Closing connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:13.990 +03:00 [DBG] Closed connection to database 'GAC-BillingService' on server '.' (2ms).
+2025-11-18 16:51:13.994 +03:00 [DBG] 'BillingServiceDBContext' disposed.
+2025-11-18 16:51:13.996 +03:00 [DBG] Disposing connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:13.998 +03:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2025-11-18 16:51:14.001 +03:00 [INF] Processed message: invoice Id: 0
+2025-11-18 16:51:14.048 +03:00 [DBG] Entity Framework Core 9.0.9 initialized 'BillingServiceDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.9' with options: EngineType=SqlServer 
+2025-11-18 16:51:14.055 +03:00 [DBG] Creating DbConnection.
+2025-11-18 16:51:14.056 +03:00 [DBG] Created DbConnection. (1ms).
+2025-11-18 16:51:14.058 +03:00 [DBG] Opening connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:14.061 +03:00 [DBG] Opened connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:14.063 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-18 16:51:14.065 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-11-18 16:51:14.067 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2025-11-18 16:51:14.069 +03:00 [DBG] Executing DbCommand [Parameters=[@__entity_Id_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [i].[Id], [i].[Amount], [i].[CancelationReasons], [i].[ClientReferenceNumber], [i].[CreatedBy], [i].[CreatedDate], [i].[Currency], [i].[CustomerID], [i].[DiscountedPrimaryInvoiceID], [i].[DueAt], [i].[ExternalId], [i].[InvoiceNumber], [i].[InvoiceStatus], [i].[InvoiceType], [i].[IsDeleted], [i].[IsDiscounted], [i].[IsSubInvoice], [i].[IsSubstitution], [i].[IssuedAt], [i].[LastUpdatedDate], [i].[Metadata], [i].[PaymentProvider], [i].[PaymentReference], [i].[PrimaryInvoiceID], [i].[ProviderResponse], [i].[SubstitutionPrimaryInvoiceID], [i].[TenantId]
+FROM [Invoices] AS [i]
+WHERE [i].[Id] = @__entity_Id_0
+2025-11-18 16:51:14.075 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__entity_Id_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [i].[Id], [i].[Amount], [i].[CancelationReasons], [i].[ClientReferenceNumber], [i].[CreatedBy], [i].[CreatedDate], [i].[Currency], [i].[CustomerID], [i].[DiscountedPrimaryInvoiceID], [i].[DueAt], [i].[ExternalId], [i].[InvoiceNumber], [i].[InvoiceStatus], [i].[InvoiceType], [i].[IsDeleted], [i].[IsDiscounted], [i].[IsSubInvoice], [i].[IsSubstitution], [i].[IssuedAt], [i].[LastUpdatedDate], [i].[Metadata], [i].[PaymentProvider], [i].[PaymentReference], [i].[PrimaryInvoiceID], [i].[ProviderResponse], [i].[SubstitutionPrimaryInvoiceID], [i].[TenantId]
+FROM [Invoices] AS [i]
+WHERE [i].[Id] = @__entity_Id_0
+2025-11-18 16:51:14.080 +03:00 [DBG] Closing data reader to 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:14.082 +03:00 [DBG] A data reader for 'GAC-BillingService' on server '.' is being disposed after spending 2ms reading results.
+2025-11-18 16:51:14.086 +03:00 [DBG] Closing connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:14.089 +03:00 [DBG] Closed connection to database 'GAC-BillingService' on server '.' (2ms).
+2025-11-18 16:51:14.092 +03:00 [DBG] 'BillingServiceDBContext' disposed.
+2025-11-18 16:51:14.095 +03:00 [DBG] Disposing connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:14.098 +03:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2025-11-18 16:51:14.100 +03:00 [INF] Processed message: invoice Id: 0
+2025-11-18 16:51:14.104 +03:00 [DBG] Entity Framework Core 9.0.9 initialized 'BillingServiceDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.9' with options: EngineType=SqlServer 
+2025-11-18 16:51:14.109 +03:00 [DBG] Creating DbConnection.
+2025-11-18 16:51:14.111 +03:00 [DBG] Created DbConnection. (1ms).
+2025-11-18 16:51:14.113 +03:00 [DBG] Opening connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:14.116 +03:00 [DBG] Opened connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:14.118 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-11-18 16:51:14.121 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2025-11-18 16:51:14.124 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2025-11-18 16:51:14.128 +03:00 [DBG] Executing DbCommand [Parameters=[@__entity_Id_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [i].[Id], [i].[Amount], [i].[CancelationReasons], [i].[ClientReferenceNumber], [i].[CreatedBy], [i].[CreatedDate], [i].[Currency], [i].[CustomerID], [i].[DiscountedPrimaryInvoiceID], [i].[DueAt], [i].[ExternalId], [i].[InvoiceNumber], [i].[InvoiceStatus], [i].[InvoiceType], [i].[IsDeleted], [i].[IsDiscounted], [i].[IsSubInvoice], [i].[IsSubstitution], [i].[IssuedAt], [i].[LastUpdatedDate], [i].[Metadata], [i].[PaymentProvider], [i].[PaymentReference], [i].[PrimaryInvoiceID], [i].[ProviderResponse], [i].[SubstitutionPrimaryInvoiceID], [i].[TenantId]
+FROM [Invoices] AS [i]
+WHERE [i].[Id] = @__entity_Id_0
+2025-11-18 16:51:14.134 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__entity_Id_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [i].[Id], [i].[Amount], [i].[CancelationReasons], [i].[ClientReferenceNumber], [i].[CreatedBy], [i].[CreatedDate], [i].[Currency], [i].[CustomerID], [i].[DiscountedPrimaryInvoiceID], [i].[DueAt], [i].[ExternalId], [i].[InvoiceNumber], [i].[InvoiceStatus], [i].[InvoiceType], [i].[IsDeleted], [i].[IsDiscounted], [i].[IsSubInvoice], [i].[IsSubstitution], [i].[IssuedAt], [i].[LastUpdatedDate], [i].[Metadata], [i].[PaymentProvider], [i].[PaymentReference], [i].[PrimaryInvoiceID], [i].[ProviderResponse], [i].[SubstitutionPrimaryInvoiceID], [i].[TenantId]
+FROM [Invoices] AS [i]
+WHERE [i].[Id] = @__entity_Id_0
+2025-11-18 16:51:14.139 +03:00 [DBG] Closing data reader to 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:14.142 +03:00 [DBG] A data reader for 'GAC-BillingService' on server '.' is being disposed after spending 3ms reading results.
+2025-11-18 16:51:14.145 +03:00 [DBG] Closing connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:14.148 +03:00 [DBG] Closed connection to database 'GAC-BillingService' on server '.' (2ms).
+2025-11-18 16:51:14.151 +03:00 [DBG] 'BillingServiceDBContext' disposed.
+2025-11-18 16:51:14.153 +03:00 [DBG] Disposing connection to database 'GAC-BillingService' on server '.'.
+2025-11-18 16:51:14.155 +03:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2025-11-18 16:51:14.159 +03:00 [INF] Processed message: invoice Id: 0

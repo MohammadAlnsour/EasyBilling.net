@@ -1,0 +1,308 @@
+2025-12-09 16:10:00.937 +03:00 [DBG] Hosting starting
+2025-12-09 16:10:06.855 +03:00 [DBG] Starting bus instances: IBus
+2025-12-09 16:10:06.865 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-12-09 16:10:06.905 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-09 16:10:06.908 +03:00 [INF] Hosting environment: Development
+2025-12-09 16:10:06.910 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-12-09 16:10:06.914 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-12-09 16:10:06.914 +03:00 [DBG] Hosting started
+2025-12-09 16:10:06.932 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 55080)
+2025-12-09 16:10:07.009 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_wn4oyyyh3bcsynb7bdxdqjnngg?temporary=true"
+2025-12-09 16:10:07.012 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-12-09 16:10:07.022 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-12-09 16:10:08.598 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+2025-12-09 16:10:08.618 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+2025-12-09 16:10:08.633 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+   at BillingSystem.PaymentOrchestrator.PaymentOrchestratorWorker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentOrchestratorWorker.cs:line 59
+2025-12-09 16:10:08.636 +03:00 [ERR] Error processing message (Attempt 0)
+System.InvalidOperationException: No service for type 'Consul.ConsulClient' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+   at BillingSystem.PaymentOrchestrator.PaymentOrchestratorWorker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentOrchestratorWorker.cs:line 59
+2025-12-09 16:10:08.646 +03:00 [WRN] Message requeued for retry (Attempt 1)
+2025-12-09 16:10:08.672 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+2025-12-09 16:10:08.701 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+2025-12-09 16:10:08.734 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+   at BillingSystem.PaymentOrchestrator.PaymentOrchestratorWorker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentOrchestratorWorker.cs:line 59
+2025-12-09 16:10:08.737 +03:00 [ERR] Error processing message (Attempt 1)
+System.InvalidOperationException: No service for type 'Consul.ConsulClient' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+   at BillingSystem.PaymentOrchestrator.PaymentOrchestratorWorker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentOrchestratorWorker.cs:line 59
+2025-12-09 16:10:08.744 +03:00 [WRN] Message moved to DLQ after 2 failures
+2025-12-09 17:35:19.944 +03:00 [DBG] Hosting starting
+2025-12-09 17:35:25.568 +03:00 [DBG] Starting bus instances: IBus
+2025-12-09 17:35:25.575 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-12-09 17:35:25.617 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-09 17:35:25.622 +03:00 [INF] Hosting environment: Development
+2025-12-09 17:35:25.627 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator
+2025-12-09 17:35:25.642 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-12-09 17:35:25.643 +03:00 [DBG] Hosting started
+2025-12-09 17:35:25.664 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 49688)
+2025-12-09 17:35:25.685 +03:00 [INF] RabbitMQ Consumer started for queue InvoiceCreatedQueue
+2025-12-09 17:35:25.760 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemP_bus_ntoyyyyh3bcsythtbdxdqcbp8a?temporary=true"
+2025-12-09 17:35:25.763 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-12-09 17:39:13.754 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-12-09 17:39:14.147 +03:00 [DBG] No relationship from 'Invoice' to 'Invoice' has been configured by convention because there are multiple properties on one entity type - {'DiscountedPrimaryInvoice'} that could be matched with the properties on the other entity type - {'InverseDiscountedPrimaryInvoice', 'InversePrimaryInvoice', 'InverseSubstitutionPrimaryInvoice', 'PrimaryInvoice', 'SubstitutionPrimaryInvoice'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-12-09 17:39:14.345 +03:00 [DBG] No relationship from 'Invoice' to 'Invoice' has been configured by convention because there are multiple properties on one entity type - {'DiscountedPrimaryInvoice'} that could be matched with the properties on the other entity type - {'InverseDiscountedPrimaryInvoice', 'InversePrimaryInvoice', 'InverseSubstitutionPrimaryInvoice', 'PrimaryInvoice', 'SubstitutionPrimaryInvoice'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-12-09 17:39:14.361 +03:00 [DBG] No relationship from 'Invoice' to 'Invoice' has been configured by convention because there are multiple properties on one entity type - {'InversePrimaryInvoice'} that could be matched with the properties on the other entity type - {'InverseSubstitutionPrimaryInvoice', 'PrimaryInvoice', 'SubstitutionPrimaryInvoice'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-12-09 17:39:14.374 +03:00 [DBG] No relationship from 'Invoice' to 'Invoice' has been configured by convention because there are multiple properties on one entity type - {'InversePrimaryInvoice'} that could be matched with the properties on the other entity type - {'InverseSubstitutionPrimaryInvoice', 'PrimaryInvoice', 'SubstitutionPrimaryInvoice'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-12-09 17:39:14.685 +03:00 [DBG] Entity Framework Core 9.0.9 initialized 'BillingServiceDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.9' with options: EngineType=SqlServer 
+2025-12-09 17:39:14.862 +03:00 [DBG] Compiling query expression: 
+'DbSet<Invoice>()
+    .SingleOrDefault(p => p.Id == __entity_Id_0)'
+2025-12-09 17:39:15.204 +03:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Invoice>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Invoice.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Invoice.Amount (decimal) Required, 1], [Property: Invoice.CancelationReasons (string) MaxLength(3000), 2], [Property: Invoice.ClientReferenceNumber (string) MaxLength(100), 3], [Property: Invoice.CreatedBy (string) Required MaxLength(50), 4], [Property: Invoice.CreatedDate (DateTime) Required, 5], [Property: Invoice.Currency (string) Required MaxLength(50), 6], [Property: Invoice.CustomerId (long) Required FK Index, 7], [Property: Invoice.DiscountedPrimaryInvoiceId (long?) FK Index, 8], [Property: Invoice.DueAt (DateTime?), 9], [Property: Invoice.ExternalId (Guid) Required Index, 10], [Property: Invoice.InvoiceNumber (string) Required MaxLength(50), 11], [Property: Invoice.InvoiceStatus (int) Required, 12], [Property: Invoice.InvoiceType (int) Required, 13], [Property: Invoice.IsDeleted (bool) Required, 14], [Property: Invoice.IsDiscounted (bool?), 15], [Property: Invoice.IsSubInvoice (bool?), 16], [Property: Invoice.IsSubstitution (bool?), 17], [Property: Invoice.IssuedAt (DateTime) Required, 18], [Property: Invoice.LastUpdatedDate (DateTime?), 19], [Property: Invoice.Metadata (string), 20], [Property: Invoice.PaymentProvider (string) MaxLength(100), 21], [Property: Invoice.PaymentReference (string) MaxLength(100), 22], [Property: Invoice.PrimaryInvoiceId (long?) FK Index, 23], [Property: Invoice.ProviderResponse (string), 24], [Property: Invoice.SubstitutionPrimaryInvoiceId (long?) FK Index, 25], [Property: Invoice.TenantId (int) Required FK Index, 26] }
+        SELECT TOP(2) i.Id, i.Amount, i.CancelationReasons, i.ClientReferenceNumber, i.CreatedBy, i.CreatedDate, i.Currency, i.CustomerID, i.DiscountedPrimaryInvoiceID, i.DueAt, i.ExternalId, i.InvoiceNumber, i.InvoiceStatus, i.InvoiceType, i.IsDeleted, i.IsDiscounted, i.IsSubInvoice, i.IsSubstitution, i.IssuedAt, i.LastUpdatedDate, i.Metadata, i.PaymentProvider, i.PaymentReference, i.PrimaryInvoiceID, i.ProviderResponse, i.SubstitutionPrimaryInvoiceID, i.TenantId
+        FROM Invoices AS i
+        WHERE i.Id == @__entity_Id_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Invoice.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Invoice.Amount (decimal) Required, 1], [Property: Invoice.CancelationReasons (string) MaxLength(3000), 2], [Property: Invoice.ClientReferenceNumber (string) MaxLength(100), 3], [Property: Invoice.CreatedBy (string) Required MaxLength(50), 4], [Property: Invoice.CreatedDate (DateTime) Required, 5], [Property: Invoice.Currency (string) Required MaxLength(50), 6], [Property: Invoice.CustomerId (long) Required FK Index, 7], [Property: Invoice.DiscountedPrimaryInvoiceId (long?) FK Index, 8], [Property: Invoice.DueAt (DateTime?), 9], [Property: Invoice.ExternalId (Guid) Required Index, 10], [Property: Invoice.InvoiceNumber (string) Required MaxLength(50), 11], [Property: Invoice.InvoiceStatus (int) Required, 12], [Property: Invoice.InvoiceType (int) Required, 13], [Property: Invoice.IsDeleted (bool) Required, 14], [Property: Invoice.IsDiscounted (bool?), 15], [Property: Invoice.IsSubInvoice (bool?), 16], [Property: Invoice.IsSubstitution (bool?), 17], [Property: Invoice.IssuedAt (DateTime) Required, 18], [Property: Invoice.LastUpdatedDate (DateTime?), 19], [Property: Invoice.Metadata (string), 20], [Property: Invoice.PaymentProvider (string) MaxLength(100), 21], [Property: Invoice.PaymentReference (string) MaxLength(100), 22], [Property: Invoice.PrimaryInvoiceId (long?) FK Index, 23], [Property: Invoice.ProviderResponse (string), 24], [Property: Invoice.SubstitutionPrimaryInvoiceId (long?) FK Index, 25], [Property: Invoice.TenantId (int) Required FK Index, 26] }
+        SELECT TOP(2) i.Id, i.Amount, i.CancelationReasons, i.ClientReferenceNumber, i.CreatedBy, i.CreatedDate, i.Currency, i.CustomerID, i.DiscountedPrimaryInvoiceID, i.DueAt, i.ExternalId, i.InvoiceNumber, i.InvoiceStatus, i.InvoiceType, i.IsDeleted, i.IsDiscounted, i.IsSubInvoice, i.IsSubstitution, i.IssuedAt, i.LastUpdatedDate, i.Metadata, i.PaymentProvider, i.PaymentReference, i.PrimaryInvoiceID, i.ProviderResponse, i.SubstitutionPrimaryInvoiceID, i.TenantId
+        FROM Invoices AS i
+        WHERE i.Id == @__entity_Id_0, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Invoice entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Invoice instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Invoice);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Invoice.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Invoice").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt64(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Invoice)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Invoice | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Invoice")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Invoice | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Invoice")]: 
+                        {
+                            return 
+                            {
+                                Invoice instance;
+                                instance = new Invoice();
+                                instance.<Id>k__BackingField = dataReader.GetInt64(0);
+                                instance.<Amount>k__BackingField = dataReader.GetDecimal(1);
+                                instance.<CancelationReasons>k__BackingField = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+                                instance.<ClientReferenceNumber>k__BackingField = dataReader.IsDBNull(3) ? default(string) : dataReader.GetString(3);
+                                instance.<CreatedBy>k__BackingField = dataReader.GetString(4);
+                                instance.<CreatedDate>k__BackingField = dataReader.GetDateTime(5);
+                                instance.<Currency>k__BackingField = dataReader.GetString(6);
+                                instance.<CustomerId>k__BackingField = dataReader.GetInt64(7);
+                                instance.<DiscountedPrimaryInvoiceId>k__BackingField = dataReader.IsDBNull(8) ? default(long?) : (long?)dataReader.GetInt64(8);
+                                instance.<DueAt>k__BackingField = dataReader.IsDBNull(9) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(9);
+                                instance.<ExternalId>k__BackingField = dataReader.GetGuid(10);
+                                instance.<InvoiceNumber>k__BackingField = dataReader.GetString(11);
+                                instance.<InvoiceStatus>k__BackingField = dataReader.GetInt32(12);
+                                instance.<InvoiceType>k__BackingField = dataReader.GetInt32(13);
+                                instance.<IsDeleted>k__BackingField = dataReader.GetBoolean(14);
+                                instance.<IsDiscounted>k__BackingField = dataReader.IsDBNull(15) ? default(bool?) : (bool?)dataReader.GetBoolean(15);
+                                instance.<IsSubInvoice>k__BackingField = dataReader.IsDBNull(16) ? default(bool?) : (bool?)dataReader.GetBoolean(16);
+                                instance.<IsSubstitution>k__BackingField = dataReader.IsDBNull(17) ? default(bool?) : (bool?)dataReader.GetBoolean(17);
+                                instance.<IssuedAt>k__BackingField = dataReader.GetDateTime(18);
+                                instance.<LastUpdatedDate>k__BackingField = dataReader.IsDBNull(19) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(19);
+                                instance.<Metadata>k__BackingField = dataReader.IsDBNull(20) ? default(string) : dataReader.GetString(20);
+                                instance.<PaymentProvider>k__BackingField = dataReader.IsDBNull(21) ? default(string) : dataReader.GetString(21);
+                                instance.<PaymentReference>k__BackingField = dataReader.IsDBNull(22) ? default(string) : dataReader.GetString(22);
+                                instance.<PrimaryInvoiceId>k__BackingField = dataReader.IsDBNull(23) ? default(long?) : (long?)dataReader.GetInt64(23);
+                                instance.<ProviderResponse>k__BackingField = dataReader.IsDBNull(24) ? default(string) : dataReader.GetString(24);
+                                instance.<SubstitutionPrimaryInvoiceId>k__BackingField = dataReader.IsDBNull(25) ? default(long?) : (long?)dataReader.GetInt64(25);
+                                instance.<TenantId>k__BackingField = dataReader.GetInt32(26);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Invoice | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Invoice")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Invoice)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: BillingSystem.Infrastructure.EF.BillingServiceDBContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2025-12-09 17:39:15.270 +03:00 [DBG] Creating DbConnection.
+2025-12-09 17:39:15.306 +03:00 [DBG] Created DbConnection. (31ms).
+2025-12-09 17:39:15.318 +03:00 [DBG] Opening connection to database 'GAC-BillingService' on server '.'.
+2025-12-09 17:39:15.919 +03:00 [DBG] Opened connection to database 'GAC-BillingService' on server '.'.
+2025-12-09 17:39:15.927 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-09 17:39:15.938 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2025-12-09 17:39:15.956 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (30ms).
+2025-12-09 17:39:15.977 +03:00 [DBG] Executing DbCommand [Parameters=[@__entity_Id_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [i].[Id], [i].[Amount], [i].[CancelationReasons], [i].[ClientReferenceNumber], [i].[CreatedBy], [i].[CreatedDate], [i].[Currency], [i].[CustomerID], [i].[DiscountedPrimaryInvoiceID], [i].[DueAt], [i].[ExternalId], [i].[InvoiceNumber], [i].[InvoiceStatus], [i].[InvoiceType], [i].[IsDeleted], [i].[IsDiscounted], [i].[IsSubInvoice], [i].[IsSubstitution], [i].[IssuedAt], [i].[LastUpdatedDate], [i].[Metadata], [i].[PaymentProvider], [i].[PaymentReference], [i].[PrimaryInvoiceID], [i].[ProviderResponse], [i].[SubstitutionPrimaryInvoiceID], [i].[TenantId]
+FROM [Invoices] AS [i]
+WHERE [i].[Id] = @__entity_Id_0
+2025-12-09 17:39:16.122 +03:00 [INF] Executed DbCommand (145ms) [Parameters=[@__entity_Id_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [i].[Id], [i].[Amount], [i].[CancelationReasons], [i].[ClientReferenceNumber], [i].[CreatedBy], [i].[CreatedDate], [i].[Currency], [i].[CustomerID], [i].[DiscountedPrimaryInvoiceID], [i].[DueAt], [i].[ExternalId], [i].[InvoiceNumber], [i].[InvoiceStatus], [i].[InvoiceType], [i].[IsDeleted], [i].[IsDiscounted], [i].[IsSubInvoice], [i].[IsSubstitution], [i].[IssuedAt], [i].[LastUpdatedDate], [i].[Metadata], [i].[PaymentProvider], [i].[PaymentReference], [i].[PrimaryInvoiceID], [i].[ProviderResponse], [i].[SubstitutionPrimaryInvoiceID], [i].[TenantId]
+FROM [Invoices] AS [i]
+WHERE [i].[Id] = @__entity_Id_0
+2025-12-09 17:39:16.137 +03:00 [DBG] Closing data reader to 'GAC-BillingService' on server '.'.
+2025-12-09 17:39:16.154 +03:00 [DBG] A data reader for 'GAC-BillingService' on server '.' is being disposed after spending 16ms reading results.
+2025-12-09 17:39:16.161 +03:00 [DBG] Closing connection to database 'GAC-BillingService' on server '.'.
+2025-12-09 17:39:16.175 +03:00 [DBG] Closed connection to database 'GAC-BillingService' on server '.' (13ms).
+2025-12-09 17:39:16.183 +03:00 [DBG] 'BillingServiceDBContext' disposed.
+2025-12-09 17:39:16.192 +03:00 [DBG] Disposing connection to database 'GAC-BillingService' on server '.'.
+2025-12-09 17:39:16.198 +03:00 [DBG] Disposed connection to database '' on server '' (7ms).
+2025-12-09 17:39:16.206 +03:00 [INF] Processed message: invoice Id: 10002
+2025-12-09 17:39:16.254 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+2025-12-09 17:39:16.275 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+2025-12-09 17:39:16.296 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+   at BillingSystem.PaymentOrchestrator.PaymentOrchestratorWorker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentOrchestratorWorker.cs:line 59
+2025-12-09 17:39:16.303 +03:00 [ERR] Error processing message (Attempt 0)
+System.InvalidOperationException: No service for type 'Consul.ConsulClient' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+   at BillingSystem.PaymentOrchestrator.PaymentOrchestratorWorker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentOrchestratorWorker.cs:line 59
+2025-12-09 17:39:16.326 +03:00 [WRN] Message requeued for retry (Attempt 1)
+2025-12-09 17:39:16.351 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+2025-12-09 17:39:16.365 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+2025-12-09 17:39:16.382 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+   at BillingSystem.PaymentOrchestrator.PaymentOrchestratorWorker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentOrchestratorWorker.cs:line 59
+2025-12-09 17:39:16.386 +03:00 [ERR] Error processing message (Attempt 1)
+System.InvalidOperationException: No service for type 'Consul.ConsulClient' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+   at BillingSystem.PaymentOrchestrator.PaymentOrchestratorWorker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentOrchestratorWorker.cs:line 59
+2025-12-09 17:39:16.393 +03:00 [WRN] Message moved to DLQ after 2 failures
+2025-12-09 17:40:46.725 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+2025-12-09 17:40:46.750 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+2025-12-09 17:40:46.782 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+   at BillingSystem.PaymentOrchestrator.PaymentOrchestratorWorker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentOrchestratorWorker.cs:line 59
+2025-12-09 17:40:46.788 +03:00 [ERR] Error processing message (Attempt 0)
+System.InvalidOperationException: No service for type 'Consul.ConsulClient' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+   at BillingSystem.PaymentOrchestrator.PaymentOrchestratorWorker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentOrchestratorWorker.cs:line 59
+2025-12-09 17:40:46.793 +03:00 [WRN] Message requeued for retry (Attempt 1)
+2025-12-09 17:40:46.824 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+2025-12-09 17:40:46.848 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+2025-12-09 17:40:46.879 +03:00 [ERR] exception occured No service for type 'Consul.ConsulClient' has been registered. , stackTrace    at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+   at BillingSystem.PaymentOrchestrator.PaymentOrchestratorWorker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentOrchestratorWorker.cs:line 59
+2025-12-09 17:40:46.884 +03:00 [ERR] Error processing message (Attempt 1)
+System.InvalidOperationException: No service for type 'Consul.ConsulClient' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.Efaa.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\Efaa.cs:line 42
+   at BillingSystem.PaymentOrchestrator.PaymentProviders.PaymentAdapter.SendInvoice(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentProviders\PaymentAdapter.cs:line 52
+   at BillingSystem.PaymentOrchestrator.MessageHandler.ProcessInvoiceMessage(Invoice invoice) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\MessageHandler.cs:line 28
+   at BillingSystem.PaymentOrchestrator.PaymentOrchestratorWorker.<ExecuteAsync>b__7_0(Object sender, BasicDeliverEventArgs ea) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.PaymentOrchestrator\PaymentOrchestratorWorker.cs:line 59
+2025-12-09 17:40:46.890 +03:00 [WRN] Message moved to DLQ after 2 failures

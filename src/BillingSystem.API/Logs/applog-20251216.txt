@@ -1,0 +1,824 @@
+2025-12-16 11:24:24.095 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-12-16 11:24:24.290 +03:00 [DBG] Hosting starting
+2025-12-16 11:24:24.730 +03:00 [INF] User profile is available. Using 'C:\Users\mnsour\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-16 11:24:24.748 +03:00 [DBG] Starting bus instances: IBus
+2025-12-16 11:24:24.757 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-12-16 11:24:24.786 +03:00 [DBG] Reading data from file 'C:\Users\mnsour\AppData\Local\ASP.NET\DataProtection-Keys\key-709f26ff-1570-4f17-9f74-ebb4c1d6a7fb.xml'.
+2025-12-16 11:24:24.802 +03:00 [DBG] Reading data from file 'C:\Users\mnsour\AppData\Local\ASP.NET\DataProtection-Keys\key-9252cdcd-1759-479f-aec2-8aba37819e25.xml'.
+2025-12-16 11:24:24.806 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-12-16 11:24:24.814 +03:00 [DBG] Found key {709f26ff-1570-4f17-9f74-ebb4c1d6a7fb}.
+2025-12-16 11:24:24.822 +03:00 [DBG] Found key {9252cdcd-1759-479f-aec2-8aba37819e25}.
+2025-12-16 11:24:24.856 +03:00 [DBG] Considering key {709f26ff-1570-4f17-9f74-ebb4c1d6a7fb} with expiration date 2025-12-27 09:35:01Z as default key.
+2025-12-16 11:24:24.866 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-12-16 11:24:24.873 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-12-16 11:24:24.880 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-12-16 11:24:24.890 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-12-16 11:24:24.897 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-12-16 11:24:24.905 +03:00 [DBG] Using key {709f26ff-1570-4f17-9f74-ebb4c1d6a7fb} as the default key.
+2025-12-16 11:24:24.910 +03:00 [DBG] Key ring with default key {709f26ff-1570-4f17-9f74-ebb4c1d6a7fb} was loaded during application startup.
+2025-12-16 11:24:24.943 +03:00 [DBG] Middleware loaded
+2025-12-16 11:24:24.948 +03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16519 B).
+2025-12-16 11:24:24.956 +03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-12-16 11:24:25.039 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 52108)
+2025-12-16 11:24:25.101 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemAPI_bus_9tkyyyyh3bcsbs47bdxda9rfd1?temporary=true"
+2025-12-16 11:24:25.114 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-12-16 11:24:25.152 +03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-12-16 11:24:25.468 +03:00 [INF] Now listening on: https://localhost:7257
+2025-12-16 11:24:25.471 +03:00 [INF] Now listening on: http://localhost:5009
+2025-12-16 11:24:25.474 +03:00 [DBG] Loaded hosting startup assembly BillingSystem.API
+2025-12-16 11:24:25.477 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-12-16 11:24:25.481 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-12-16 11:24:25.484 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-12-16 11:24:25.551 +03:00 [DBG] Connection id "0HNHSFI30H4OL" accepted.
+2025-12-16 11:24:25.551 +03:00 [DBG] Connection id "0HNHSFI30H4OK" accepted.
+2025-12-16 11:24:25.557 +03:00 [DBG] Connection id "0HNHSFI30H4OL" started.
+2025-12-16 11:24:25.560 +03:00 [DBG] Connection id "0HNHSFI30H4OK" started.
+2025-12-16 11:24:25.567 +03:00 [DBG] Connection id "0HNHSFI30H4OL" received FIN.
+2025-12-16 11:24:25.567 +03:00 [DBG] Connection id "0HNHSFI30H4OK" received FIN.
+2025-12-16 11:24:25.585 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-16 11:24:25.585 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-16 11:24:25.617 +03:00 [DBG] Connection id "0HNHSFI30H4OL" stopped.
+2025-12-16 11:24:25.618 +03:00 [DBG] Connection id "0HNHSFI30H4OK" stopped.
+2025-12-16 11:24:25.627 +03:00 [DBG] Connection id "0HNHSFI30H4OL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-16 11:24:25.627 +03:00 [DBG] Connection id "0HNHSFI30H4OK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-16 11:24:25.693 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-16 11:24:25.696 +03:00 [INF] Hosting environment: Development
+2025-12-16 11:24:25.698 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.API
+2025-12-16 11:24:25.701 +03:00 [DBG] Hosting started
+2025-12-16 11:24:26.578 +03:00 [DBG] Connection id "0HNHSFI30H4OM" accepted.
+2025-12-16 11:24:26.583 +03:00 [DBG] Connection id "0HNHSFI30H4OM" started.
+2025-12-16 11:24:26.646 +03:00 [DBG] Connection 0HNHSFI30H4OM established using the following protocol: "Tls13"
+2025-12-16 11:24:26.734 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/swagger/index.html - null null
+2025-12-16 11:24:26.795 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-12-16 11:24:26.826 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-12-16 11:24:26.830 +03:00 [DBG] Request did not match any endpoints
+2025-12-16 11:24:26.922 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-12-16 11:24:26.928 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-12-16 11:24:26.954 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 117.1395 ms
+2025-12-16 11:24:26.960 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-12-16 11:24:26.963 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-12-16 11:24:26.976 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/swagger/index.html - 200 null text/html;charset=utf-8 254.2571ms
+2025-12-16 11:24:27.042 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-16 11:24:27.042 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/_vs/browserLink - null null
+2025-12-16 11:24:27.055 +03:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-12-16 11:24:27.059 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 17.0582ms
+2025-12-16 11:24:27.111 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.2267ms
+2025-12-16 11:24:27.209 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/swagger/v1/swagger.json - null null
+2025-12-16 11:24:27.216 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-12-16 11:24:27.218 +03:00 [DBG] Request did not match any endpoints
+2025-12-16 11:24:27.239 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 17.8358 ms
+2025-12-16 11:24:27.245 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.2316ms
+2025-12-16 11:44:09.878 +03:00 [DBG] Connection id "0HNHSFI30H4OM" received FIN.
+2025-12-16 11:44:09.897 +03:00 [DBG] The connection queue processing loop for 0HNHSFI30H4OM completed.
+2025-12-16 11:44:09.903 +03:00 [DBG] Connection id "0HNHSFI30H4OM" is closed. The last processed stream ID was 7.
+2025-12-16 11:44:09.907 +03:00 [DBG] Connection id "0HNHSFI30H4OM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-16 11:44:09.917 +03:00 [DBG] Connection id "0HNHSFI30H4OM" stopped.
+2025-12-16 11:51:36.156 +03:00 [DBG] Connection id "0HNHSFI30H4ON" accepted.
+2025-12-16 11:51:36.156 +03:00 [DBG] Connection id "0HNHSFI30H4ON" received FIN.
+2025-12-16 11:51:36.171 +03:00 [DBG] Connection id "0HNHSFI30H4ON" started.
+2025-12-16 11:51:36.180 +03:00 [DBG] Connection id "0HNHSFI30H4OO" accepted.
+2025-12-16 11:51:36.191 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-16 11:51:36.193 +03:00 [DBG] Connection id "0HNHSFI30H4OO" started.
+2025-12-16 11:51:36.199 +03:00 [DBG] Connection id "0HNHSFI30H4ON" stopped.
+2025-12-16 11:51:36.205 +03:00 [DBG] Connection id "0HNHSFI30H4ON" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-16 11:51:36.211 +03:00 [DBG] Connection 0HNHSFI30H4OO established using the following protocol: "Tls13"
+2025-12-16 11:51:36.219 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7257/api/Invoices/Post - application/json 1544
+2025-12-16 11:51:36.231 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Invoices/Post'
+2025-12-16 11:51:36.240 +03:00 [DBG] Endpoint 'BillingSystem.API.Controllers.InvoicesController.Post (BillingSystem.API)' with route pattern 'api/Invoices/Post' is valid for the request path '/api/Invoices/Post'
+2025-12-16 11:51:36.245 +03:00 [DBG] Request matched endpoint 'BillingSystem.API.Controllers.InvoicesController.Post (BillingSystem.API)'
+2025-12-16 11:51:36.250 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-12-16 11:51:37.626 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-12-16 11:51:37.634 +03:00 [DBG] Policy authentication schemes  did not succeed
+2025-12-16 11:51:37.643 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-16 11:51:37.654 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-16 11:51:37.657 +03:00 [INF] HTTP POST /api/Invoices/Post responded 401 in 1408.7692 ms
+2025-12-16 11:51:37.679 +03:00 [DBG] Connection id "0HNHSFI30H4OO" completed keep alive response.
+2025-12-16 11:51:37.682 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7257/api/Invoices/Post - 401 0 null 1463.1781ms
+2025-12-16 11:51:37.691 +03:00 [DBG] Connection id "0HNHSFI30H4OO", Request id "0HNHSFI30H4OO:00000001": started reading request body.
+2025-12-16 11:51:37.695 +03:00 [DBG] Connection id "0HNHSFI30H4OO", Request id "0HNHSFI30H4OO:00000001": done reading request body.
+2025-12-16 11:55:17.102 +03:00 [DBG] Connection id "0HNHSFI30H4OP" received FIN.
+2025-12-16 11:55:17.109 +03:00 [DBG] Connection id "0HNHSFI30H4OP" accepted.
+2025-12-16 11:55:17.118 +03:00 [DBG] Connection id "0HNHSFI30H4OP" started.
+2025-12-16 11:55:17.127 +03:00 [DBG] Connection id "0HNHSFI30H4OQ" accepted.
+2025-12-16 11:55:17.141 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-16 11:55:17.143 +03:00 [DBG] Connection id "0HNHSFI30H4OQ" started.
+2025-12-16 11:55:17.149 +03:00 [DBG] Connection id "0HNHSFI30H4OP" stopped.
+2025-12-16 11:55:17.153 +03:00 [DBG] Connection id "0HNHSFI30H4OP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-16 11:55:17.158 +03:00 [DBG] Connection 0HNHSFI30H4OQ established using the following protocol: "Tls13"
+2025-12-16 11:55:17.161 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7257/api/Invoices/Post - application/json 1544
+2025-12-16 11:55:17.167 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Invoices/Post'
+2025-12-16 11:55:17.171 +03:00 [DBG] Endpoint 'BillingSystem.API.Controllers.InvoicesController.Post (BillingSystem.API)' with route pattern 'api/Invoices/Post' is valid for the request path '/api/Invoices/Post'
+2025-12-16 11:55:17.175 +03:00 [DBG] Request matched endpoint 'BillingSystem.API.Controllers.InvoicesController.Post (BillingSystem.API)'
+2025-12-16 11:55:17.178 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-12-16 11:55:17.184 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-12-16 11:55:17.187 +03:00 [DBG] Policy authentication schemes  did not succeed
+2025-12-16 11:55:17.190 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-16 11:55:17.193 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-16 11:55:17.195 +03:00 [INF] HTTP POST /api/Invoices/Post responded 401 in 17.0823 ms
+2025-12-16 11:55:17.200 +03:00 [DBG] Connection id "0HNHSFI30H4OQ" completed keep alive response.
+2025-12-16 11:55:17.203 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7257/api/Invoices/Post - 401 0 null 41.5402ms
+2025-12-16 11:55:17.210 +03:00 [DBG] Connection id "0HNHSFI30H4OQ", Request id "0HNHSFI30H4OQ:00000001": started reading request body.
+2025-12-16 11:55:17.213 +03:00 [DBG] Connection id "0HNHSFI30H4OQ", Request id "0HNHSFI30H4OQ:00000001": done reading request body.
+2025-12-16 12:34:38.725 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-12-16 12:34:38.965 +03:00 [DBG] Hosting starting
+2025-12-16 12:34:39.470 +03:00 [INF] User profile is available. Using 'C:\Users\mnsour\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-16 12:34:39.490 +03:00 [DBG] Starting bus instances: IBus
+2025-12-16 12:34:39.499 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-12-16 12:34:39.532 +03:00 [DBG] Reading data from file 'C:\Users\mnsour\AppData\Local\ASP.NET\DataProtection-Keys\key-709f26ff-1570-4f17-9f74-ebb4c1d6a7fb.xml'.
+2025-12-16 12:34:39.567 +03:00 [DBG] Reading data from file 'C:\Users\mnsour\AppData\Local\ASP.NET\DataProtection-Keys\key-9252cdcd-1759-479f-aec2-8aba37819e25.xml'.
+2025-12-16 12:34:39.611 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-12-16 12:34:39.625 +03:00 [DBG] Found key {709f26ff-1570-4f17-9f74-ebb4c1d6a7fb}.
+2025-12-16 12:34:39.640 +03:00 [DBG] Found key {9252cdcd-1759-479f-aec2-8aba37819e25}.
+2025-12-16 12:34:39.658 +03:00 [DBG] Considering key {709f26ff-1570-4f17-9f74-ebb4c1d6a7fb} with expiration date 2025-12-27 09:35:01Z as default key.
+2025-12-16 12:34:39.668 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-12-16 12:34:39.690 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-12-16 12:34:39.696 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-12-16 12:34:39.716 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-12-16 12:34:39.729 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-12-16 12:34:39.735 +03:00 [DBG] Using key {709f26ff-1570-4f17-9f74-ebb4c1d6a7fb} as the default key.
+2025-12-16 12:34:39.742 +03:00 [DBG] Key ring with default key {709f26ff-1570-4f17-9f74-ebb4c1d6a7fb} was loaded during application startup.
+2025-12-16 12:34:39.759 +03:00 [DBG] Middleware loaded
+2025-12-16 12:34:39.763 +03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16519 B).
+2025-12-16 12:34:39.768 +03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-12-16 12:34:39.783 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 55204)
+2025-12-16 12:34:39.889 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemAPI_bus_wtnoyyyh3bcsbeq9bdxd3b1ify?temporary=true"
+2025-12-16 12:34:39.893 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-12-16 12:34:39.976 +03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-12-16 12:34:40.368 +03:00 [INF] Now listening on: https://localhost:7257
+2025-12-16 12:34:40.371 +03:00 [INF] Now listening on: http://localhost:5009
+2025-12-16 12:34:40.375 +03:00 [DBG] Loaded hosting startup assembly BillingSystem.API
+2025-12-16 12:34:40.377 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-12-16 12:34:40.380 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-12-16 12:34:40.383 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-12-16 12:34:40.535 +03:00 [DBG] Connection id "0HNHSGPB5O3DA" accepted.
+2025-12-16 12:34:40.535 +03:00 [DBG] Connection id "0HNHSGPB5O3D9" accepted.
+2025-12-16 12:34:40.539 +03:00 [DBG] Connection id "0HNHSGPB5O3DA" received FIN.
+2025-12-16 12:34:40.540 +03:00 [DBG] Connection id "0HNHSGPB5O3DA" started.
+2025-12-16 12:34:40.543 +03:00 [DBG] Connection id "0HNHSGPB5O3D9" started.
+2025-12-16 12:34:40.539 +03:00 [DBG] Connection id "0HNHSGPB5O3D9" received FIN.
+2025-12-16 12:34:40.569 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-16 12:34:40.577 +03:00 [INF] Hosting environment: Development
+2025-12-16 12:34:40.597 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.API
+2025-12-16 12:34:40.611 +03:00 [DBG] Hosting started
+2025-12-16 12:34:40.603 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-16 12:34:40.603 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-16 12:34:40.653 +03:00 [DBG] Connection id "0HNHSGPB5O3DA" stopped.
+2025-12-16 12:34:40.655 +03:00 [DBG] Connection id "0HNHSGPB5O3D9" stopped.
+2025-12-16 12:34:40.662 +03:00 [DBG] Connection id "0HNHSGPB5O3D9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-16 12:34:40.662 +03:00 [DBG] Connection id "0HNHSGPB5O3DA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-16 12:34:41.826 +03:00 [DBG] Connection id "0HNHSGPB5O3DB" accepted.
+2025-12-16 12:34:41.831 +03:00 [DBG] Connection id "0HNHSGPB5O3DB" started.
+2025-12-16 12:34:41.953 +03:00 [DBG] Connection 0HNHSGPB5O3DB established using the following protocol: "Tls13"
+2025-12-16 12:34:42.097 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/swagger/index.html - null null
+2025-12-16 12:34:42.171 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-12-16 12:34:42.206 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-12-16 12:34:42.210 +03:00 [DBG] Request did not match any endpoints
+2025-12-16 12:34:42.311 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-12-16 12:34:42.316 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-12-16 12:34:42.348 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 129.5790 ms
+2025-12-16 12:34:42.356 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-12-16 12:34:42.359 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-12-16 12:34:42.368 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/swagger/index.html - 200 null text/html;charset=utf-8 291.1905ms
+2025-12-16 12:34:42.390 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-16 12:34:42.411 +03:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-12-16 12:34:42.433 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/_vs/browserLink - null null
+2025-12-16 12:34:42.463 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 70.8624ms
+2025-12-16 12:34:42.634 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/_vs/browserLink - 200 null text/javascript; charset=UTF-8 201.1117ms
+2025-12-16 12:34:42.675 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/swagger/v1/swagger.json - null null
+2025-12-16 12:34:42.684 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-12-16 12:34:42.687 +03:00 [DBG] Request did not match any endpoints
+2025-12-16 12:34:42.712 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 22.3219 ms
+2025-12-16 12:34:42.720 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 45.9593ms
+2025-12-16 12:34:55.205 +03:00 [DBG] Connection id "0HNHSGPB5O3DC" accepted.
+2025-12-16 12:34:55.206 +03:00 [DBG] Connection id "0HNHSGPB5O3DC" received FIN.
+2025-12-16 12:34:55.209 +03:00 [DBG] Connection id "0HNHSGPB5O3DC" started.
+2025-12-16 12:34:55.210 +03:00 [DBG] Connection id "0HNHSGPB5O3DD" accepted.
+2025-12-16 12:34:55.216 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-16 12:34:55.218 +03:00 [DBG] Connection id "0HNHSGPB5O3DD" started.
+2025-12-16 12:34:55.222 +03:00 [DBG] Connection id "0HNHSGPB5O3DC" stopped.
+2025-12-16 12:34:55.226 +03:00 [DBG] Connection id "0HNHSGPB5O3DC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-16 12:34:55.230 +03:00 [DBG] Connection 0HNHSGPB5O3DD established using the following protocol: "Tls13"
+2025-12-16 12:34:55.239 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7257/api/Invoices/Post - application/json 1544
+2025-12-16 12:34:55.250 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Invoices/Post'
+2025-12-16 12:34:55.258 +03:00 [DBG] Endpoint 'BillingSystem.API.Controllers.InvoicesController.Post (BillingSystem.API)' with route pattern 'api/Invoices/Post' is valid for the request path '/api/Invoices/Post'
+2025-12-16 12:34:55.264 +03:00 [DBG] Request matched endpoint 'BillingSystem.API.Controllers.InvoicesController.Post (BillingSystem.API)'
+2025-12-16 12:34:55.269 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-12-16 12:34:55.386 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-12-16 12:34:55.413 +03:00 [DBG] Connection id "0HNHSGPB5O3DD", Request id "0HNHSGPB5O3DD:00000001": started reading request body.
+2025-12-16 12:34:55.418 +03:00 [DBG] Connection id "0HNHSGPB5O3DD", Request id "0HNHSGPB5O3DD:00000001": done reading request body.
+2025-12-16 12:34:55.847 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-12-16 12:34:56.289 +03:00 [DBG] No relationship from 'Invoice' to 'Invoice' has been configured by convention because there are multiple properties on one entity type - {'DiscountedPrimaryInvoice'} that could be matched with the properties on the other entity type - {'InverseDiscountedPrimaryInvoice', 'InversePrimaryInvoice', 'InverseSubstitutionPrimaryInvoice', 'PrimaryInvoice', 'SubstitutionPrimaryInvoice'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-12-16 12:34:56.551 +03:00 [DBG] No relationship from 'Invoice' to 'Invoice' has been configured by convention because there are multiple properties on one entity type - {'DiscountedPrimaryInvoice'} that could be matched with the properties on the other entity type - {'InverseDiscountedPrimaryInvoice', 'InversePrimaryInvoice', 'InverseSubstitutionPrimaryInvoice', 'PrimaryInvoice', 'SubstitutionPrimaryInvoice'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-12-16 12:34:56.563 +03:00 [DBG] No relationship from 'Invoice' to 'Invoice' has been configured by convention because there are multiple properties on one entity type - {'InversePrimaryInvoice'} that could be matched with the properties on the other entity type - {'InverseSubstitutionPrimaryInvoice', 'PrimaryInvoice', 'SubstitutionPrimaryInvoice'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-12-16 12:34:56.570 +03:00 [DBG] No relationship from 'Invoice' to 'Invoice' has been configured by convention because there are multiple properties on one entity type - {'InversePrimaryInvoice'} that could be matched with the properties on the other entity type - {'InverseSubstitutionPrimaryInvoice', 'PrimaryInvoice', 'SubstitutionPrimaryInvoice'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2025-12-16 12:34:56.942 +03:00 [DBG] Entity Framework Core 9.0.9 initialized 'BillingServiceDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.9' with options: EngineType=SqlServer 
+2025-12-16 12:34:57.059 +03:00 [DBG] Compiling query expression: 
+'DbSet<Tenant>()'
+2025-12-16 12:34:57.415 +03:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Tenant>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Tenant.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Tenant.IsDeleted (bool) Required, 1], [Property: Tenant.TenantGuid (Guid) Required, 2], [Property: Tenant.TenantName (string) Required MaxLength(100), 3], [Property: Tenant.TenantStatus (int) Required, 4], [Property: Tenant.ValidFrom (DateTime) Required, 5], [Property: Tenant.ValidTo (DateTime) Required, 6] }
+        SELECT t.Id, t.IsDeleted, t.TenantGUID, t.TenantName, t.TenantStatus, t.ValidFrom, t.ValidTo
+        FROM Tenants AS t) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Tenant.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Tenant.IsDeleted (bool) Required, 1], [Property: Tenant.TenantGuid (Guid) Required, 2], [Property: Tenant.TenantName (string) Required MaxLength(100), 3], [Property: Tenant.TenantStatus (int) Required, 4], [Property: Tenant.ValidFrom (DateTime) Required, 5], [Property: Tenant.ValidTo (DateTime) Required, 6] }
+        SELECT t.Id, t.IsDeleted, t.TenantGUID, t.TenantName, t.TenantStatus, t.ValidFrom, t.ValidTo
+        FROM Tenants AS t, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Tenant entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Tenant instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Tenant);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Tenant.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Tenant").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Tenant)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Tenant | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Tenant")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Tenant | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Tenant")]: 
+                        {
+                            return 
+                            {
+                                Tenant instance;
+                                instance = new Tenant();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<IsDeleted>k__BackingField = dataReader.GetBoolean(1);
+                                instance.<TenantGuid>k__BackingField = dataReader.GetGuid(2);
+                                instance.<TenantName>k__BackingField = dataReader.GetString(3);
+                                instance.<TenantStatus>k__BackingField = dataReader.GetInt32(4);
+                                instance.<ValidFrom>k__BackingField = dataReader.GetDateTime(5);
+                                instance.<ValidTo>k__BackingField = dataReader.GetDateTime(6);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Tenant | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Tenant")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Tenant)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: BillingSystem.Infrastructure.EF.BillingServiceDBContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-12-16 12:34:57.466 +03:00 [DBG] Creating DbConnection.
+2025-12-16 12:34:57.502 +03:00 [DBG] Created DbConnection. (33ms).
+2025-12-16 12:34:57.509 +03:00 [DBG] Opening connection to database 'GAC-BillingService' on server '.'.
+2025-12-16 12:34:58.014 +03:00 [DBG] Opened connection to database 'GAC-BillingService' on server '.'.
+2025-12-16 12:34:58.024 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-16 12:34:58.039 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (10ms).
+2025-12-16 12:34:58.044 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (21ms).
+2025-12-16 12:34:58.055 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsDeleted], [t].[TenantGUID], [t].[TenantName], [t].[TenantStatus], [t].[ValidFrom], [t].[ValidTo]
+FROM [Tenants] AS [t]
+2025-12-16 12:34:58.112 +03:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsDeleted], [t].[TenantGUID], [t].[TenantName], [t].[TenantStatus], [t].[ValidFrom], [t].[ValidTo]
+FROM [Tenants] AS [t]
+2025-12-16 12:34:58.178 +03:00 [DBG] Context 'BillingServiceDBContext' started tracking 'Tenant' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:34:58.218 +03:00 [DBG] Context 'BillingServiceDBContext' started tracking 'Tenant' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:34:58.227 +03:00 [DBG] Closing data reader to 'GAC-BillingService' on server '.'.
+2025-12-16 12:34:58.238 +03:00 [DBG] A data reader for 'GAC-BillingService' on server '.' is being disposed after spending 114ms reading results.
+2025-12-16 12:34:58.246 +03:00 [DBG] Closing connection to database 'GAC-BillingService' on server '.'.
+2025-12-16 12:34:58.258 +03:00 [DBG] Closed connection to database 'GAC-BillingService' on server '.' (12ms).
+2025-12-16 12:34:58.316 +03:00 [INF] Executing endpoint 'BillingSystem.API.Controllers.InvoicesController.Post (BillingSystem.API)'
+2025-12-16 12:34:58.346 +03:00 [INF] Route matched with {action = "Post", controller = "Invoices"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(BillingSystem.Application.Requests.CreateInvoiceRequest) on controller BillingSystem.API.Controllers.InvoicesController (BillingSystem.API).
+2025-12-16 12:34:58.354 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-12-16 12:34:58.361 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-12-16 12:34:58.366 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)","BillingSystem.API.ActionFilters.IdempotencyFilter (Order: 0)"]
+2025-12-16 12:34:58.373 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-12-16 12:34:58.378 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)","BillingSystem.API.ActionFilters.IdempotencyFilter (Order: 0)"]
+2025-12-16 12:34:58.384 +03:00 [DBG] Executing controller factory for controller BillingSystem.API.Controllers.InvoicesController (BillingSystem.API)
+2025-12-16 12:34:58.392 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-16 12:34:58.435 +03:00 [DBG] Executed controller factory for controller BillingSystem.API.Controllers.InvoicesController (BillingSystem.API)
+2025-12-16 12:34:58.450 +03:00 [DBG] Attempting to bind parameter 'invoiceRequest' of type 'BillingSystem.Application.Requests.CreateInvoiceRequest' ...
+2025-12-16 12:34:58.461 +03:00 [DBG] Attempting to bind parameter 'invoiceRequest' of type 'BillingSystem.Application.Requests.CreateInvoiceRequest' using the name '' in request data ...
+2025-12-16 12:34:58.470 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-12-16 12:34:58.561 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'BillingSystem.Application.Requests.CreateInvoiceRequest'
+2025-12-16 12:34:58.565 +03:00 [DBG] Done attempting to bind parameter 'invoiceRequest' of type 'BillingSystem.Application.Requests.CreateInvoiceRequest'.
+2025-12-16 12:34:58.569 +03:00 [DBG] Done attempting to bind parameter 'invoiceRequest' of type 'BillingSystem.Application.Requests.CreateInvoiceRequest'.
+2025-12-16 12:34:58.573 +03:00 [DBG] Attempting to validate the bound parameter 'invoiceRequest' of type 'BillingSystem.Application.Requests.CreateInvoiceRequest' ...
+2025-12-16 12:34:58.606 +03:00 [DBG] Done attempting to validate the bound parameter 'invoiceRequest' of type 'BillingSystem.Application.Requests.CreateInvoiceRequest'.
+2025-12-16 12:34:58.645 +03:00 [DBG] Compiling query expression: 
+'DbSet<Invoice>()
+    .AsNoTracking()
+    .Any(inv => inv.ExternalId.ToString() == __idempotentKey_0)'
+2025-12-16 12:34:58.884 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Invoices AS i
+                WHERE COALESCE(CONVERT(varchar(36), i.ExternalId), '') == @__idempotentKey_0)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Invoices AS i
+                WHERE COALESCE(CONVERT(varchar(36), i.ExternalId), '') == @__idempotentKey_0), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: BillingSystem.Infrastructure.EF.BillingServiceDBContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-12-16 12:34:58.941 +03:00 [DBG] Opening connection to database 'GAC-BillingService' on server '.'.
+2025-12-16 12:34:58.947 +03:00 [DBG] Opened connection to database 'GAC-BillingService' on server '.'.
+2025-12-16 12:34:58.951 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-16 12:34:58.955 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2025-12-16 12:34:58.968 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (16ms).
+2025-12-16 12:34:58.992 +03:00 [DBG] Executing DbCommand [Parameters=[@__idempotentKey_0='?' (Size = 36) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Invoices] AS [i]
+        WHERE CONVERT(varchar(36), [i].[ExternalId]) = @__idempotentKey_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-16 12:34:59.106 +03:00 [INF] Executed DbCommand (133ms) [Parameters=[@__idempotentKey_0='?' (Size = 36) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Invoices] AS [i]
+        WHERE CONVERT(varchar(36), [i].[ExternalId]) = @__idempotentKey_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-16 12:34:59.116 +03:00 [DBG] Closing data reader to 'GAC-BillingService' on server '.'.
+2025-12-16 12:34:59.121 +03:00 [DBG] A data reader for 'GAC-BillingService' on server '.' is being disposed after spending 6ms reading results.
+2025-12-16 12:34:59.128 +03:00 [DBG] Closing connection to database 'GAC-BillingService' on server '.'.
+2025-12-16 12:34:59.132 +03:00 [DBG] Closed connection to database 'GAC-BillingService' on server '.' (3ms).
+2025-12-16 12:34:59.502 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-12-16 12:34:59.603 +03:00 [DBG] Opening connection to database 'GAC-BillingService' on server '.'.
+2025-12-16 12:34:59.611 +03:00 [DBG] Opened connection to database 'GAC-BillingService' on server '.'.
+2025-12-16 12:34:59.621 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-12-16 12:34:59.649 +03:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2025-12-16 12:34:59.658 +03:00 [DBG] Compiling query expression: 
+'DbSet<InvoiceSequenceValue>().FromSql(EXECUTE dbo.GetNextInvoiceNumber, __p_0)
+'
+2025-12-16 12:34:59.686 +03:00 [DBG] Generated query execution expression: 
+'queryContext => FromSqlQueryingEnumerable.Create<InvoiceSequenceValue>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: InvoiceSequenceValue.Value (long) Required, 0] }
+        SELECT b.Value
+        FROM EXECUTE dbo.GetNextInvoiceNumber) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: InvoiceSequenceValue.Value (long) Required, 0] }
+        SELECT b.Value
+        FROM EXECUTE dbo.GetNextInvoiceNumber, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    columnNames: [LIFTABLE Constant: string[] { "Value" } | Resolver: _ => new string[]{ "Value" }], 
+    shaper: (queryContext, dataReader, indexMap) => 
+    {
+        InvoiceSequenceValue entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            InvoiceSequenceValue instance1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(InvoiceSequenceValue);
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: InvoiceSequenceValue Keyless | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.InvoiceSequenceValue")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: InvoiceSequenceValue Keyless | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.InvoiceSequenceValue")]: 
+                        {
+                            return 
+                            {
+                                InvoiceSequenceValue instance;
+                                instance = new InvoiceSequenceValue();
+                                instance.<Value>k__BackingField = dataReader.GetInt64(indexMap[0]);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: InvoiceSequenceValue Keyless | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.InvoiceSequenceValue")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(InvoiceSequenceValue)
+                }
+                ;
+                return instance1;
+            }return instance1;
+        };
+        return entity;
+    }, 
+    contextType: BillingSystem.Infrastructure.EF.BillingServiceDBContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-12-16 12:34:59.718 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-16 12:34:59.723 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2025-12-16 12:34:59.737 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (19ms).
+2025-12-16 12:34:59.741 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXECUTE dbo.GetNextInvoiceNumber
+2025-12-16 12:34:59.770 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXECUTE dbo.GetNextInvoiceNumber
+2025-12-16 12:34:59.783 +03:00 [DBG] Closing data reader to 'GAC-BillingService' on server '.'.
+2025-12-16 12:34:59.788 +03:00 [DBG] A data reader for 'GAC-BillingService' on server '.' is being disposed after spending 9ms reading results.
+2025-12-16 12:34:59.803 +03:00 [DBG] Compiling query expression: 
+'DbSet<Customer>()
+    .FirstOrDefault(c => c.IdentityNumber == __cutomerIdentityNumber_0)'
+2025-12-16 12:34:59.828 +03:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Customer>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Customer.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Customer.AddressBuildingNumber (string) MaxLength(200), 1], [Property: Customer.AddressCity (string) Required MaxLength(200), 2], [Property: Customer.AddressCountry (string) Required MaxLength(200), 3], [Property: Customer.AddressDistrict (string) Required MaxLength(200), 4], [Property: Customer.AddressPostalCode (string) Required MaxLength(50), 5], [Property: Customer.AddressStreet (string) MaxLength(200), 6], [Property: Customer.AddressSubNumber (string) MaxLength(200), 7], [Property: Customer.CreatedBy (string) Required MaxLength(50), 8], [Property: Customer.CreatedDate (DateTime) Required, 9], [Property: Customer.CustomerType (string) Required MaxLength(100), 10], [Property: Customer.EmailAddress (string) MaxLength(80), 11], [Property: Customer.FullName (string) Required MaxLength(500), 12], [Property: Customer.IdentityNumber (string) Required MaxLength(100), 13], [Property: Customer.IdentityType (int?), 14], [Property: Customer.IsDeleted (bool) Required, 15], [Property: Customer.LastUpdatedDate (DateTime?), 16], [Property: Customer.OverpaymentBalance (decimal?), 17], [Property: Customer.PhoneNumber (string) MaxLength(50), 18], [Property: Customer.Vatnumber (string) MaxLength(100), 19] }
+        SELECT TOP(1) c.Id, c.Address_BuildingNumber, c.Address_City, c.Address_Country, c.Address_District, c.Address_PostalCode, c.Address_Street, c.Address_SubNumber, c.CreatedBy, c.CreatedDate, c.CustomerType, c.EmailAddress, c.FullName, c.IdentityNumber, c.IdentityType, c.IsDeleted, c.LastUpdatedDate, c.OverpaymentBalance, c.PhoneNumber, c.VATNumber
+        FROM Customers AS c
+        WHERE c.IdentityNumber == @__cutomerIdentityNumber_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Customer.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Customer.AddressBuildingNumber (string) MaxLength(200), 1], [Property: Customer.AddressCity (string) Required MaxLength(200), 2], [Property: Customer.AddressCountry (string) Required MaxLength(200), 3], [Property: Customer.AddressDistrict (string) Required MaxLength(200), 4], [Property: Customer.AddressPostalCode (string) Required MaxLength(50), 5], [Property: Customer.AddressStreet (string) MaxLength(200), 6], [Property: Customer.AddressSubNumber (string) MaxLength(200), 7], [Property: Customer.CreatedBy (string) Required MaxLength(50), 8], [Property: Customer.CreatedDate (DateTime) Required, 9], [Property: Customer.CustomerType (string) Required MaxLength(100), 10], [Property: Customer.EmailAddress (string) MaxLength(80), 11], [Property: Customer.FullName (string) Required MaxLength(500), 12], [Property: Customer.IdentityNumber (string) Required MaxLength(100), 13], [Property: Customer.IdentityType (int?), 14], [Property: Customer.IsDeleted (bool) Required, 15], [Property: Customer.LastUpdatedDate (DateTime?), 16], [Property: Customer.OverpaymentBalance (decimal?), 17], [Property: Customer.PhoneNumber (string) MaxLength(50), 18], [Property: Customer.Vatnumber (string) MaxLength(100), 19] }
+        SELECT TOP(1) c.Id, c.Address_BuildingNumber, c.Address_City, c.Address_Country, c.Address_District, c.Address_PostalCode, c.Address_Street, c.Address_SubNumber, c.CreatedBy, c.CreatedDate, c.CustomerType, c.EmailAddress, c.FullName, c.IdentityNumber, c.IdentityType, c.IsDeleted, c.LastUpdatedDate, c.OverpaymentBalance, c.PhoneNumber, c.VATNumber
+        FROM Customers AS c
+        WHERE c.IdentityNumber == @__cutomerIdentityNumber_0, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Customer entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Customer instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Customer);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Customer.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Customer").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt64(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Customer)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Customer | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Customer")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Customer | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Customer")]: 
+                        {
+                            return 
+                            {
+                                Customer instance;
+                                instance = new Customer();
+                                instance.<Id>k__BackingField = dataReader.GetInt64(0);
+                                instance.<AddressBuildingNumber>k__BackingField = dataReader.IsDBNull(1) ? default(string) : dataReader.GetString(1);
+                                instance.<AddressCity>k__BackingField = dataReader.GetString(2);
+                                instance.<AddressCountry>k__BackingField = dataReader.GetString(3);
+                                instance.<AddressDistrict>k__BackingField = dataReader.GetString(4);
+                                instance.<AddressPostalCode>k__BackingField = dataReader.GetString(5);
+                                instance.<AddressStreet>k__BackingField = dataReader.IsDBNull(6) ? default(string) : dataReader.GetString(6);
+                                instance.<AddressSubNumber>k__BackingField = dataReader.IsDBNull(7) ? default(string) : dataReader.GetString(7);
+                                instance.<CreatedBy>k__BackingField = dataReader.GetString(8);
+                                instance.<CreatedDate>k__BackingField = dataReader.GetDateTime(9);
+                                instance.<CustomerType>k__BackingField = dataReader.GetString(10);
+                                instance.<EmailAddress>k__BackingField = dataReader.IsDBNull(11) ? default(string) : dataReader.GetString(11);
+                                instance.<FullName>k__BackingField = dataReader.GetString(12);
+                                instance.<IdentityNumber>k__BackingField = dataReader.GetString(13);
+                                instance.<IdentityType>k__BackingField = dataReader.IsDBNull(14) ? default(int?) : (int?)dataReader.GetInt32(14);
+                                instance.<IsDeleted>k__BackingField = dataReader.GetBoolean(15);
+                                instance.<LastUpdatedDate>k__BackingField = dataReader.IsDBNull(16) ? default(DateTime?) : (DateTime?)dataReader.GetDateTime(16);
+                                instance.<OverpaymentBalance>k__BackingField = dataReader.IsDBNull(17) ? default(decimal?) : (decimal?)dataReader.GetDecimal(17);
+                                instance.<PhoneNumber>k__BackingField = dataReader.IsDBNull(18) ? default(string) : dataReader.GetString(18);
+                                instance.<Vatnumber>k__BackingField = dataReader.IsDBNull(19) ? default(string) : dataReader.GetString(19);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Customer | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("BillingSystem.Domain.Entities.Customer")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Customer)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: BillingSystem.Infrastructure.EF.BillingServiceDBContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2025-12-16 12:34:59.857 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-16 12:34:59.864 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (7ms).
+2025-12-16 12:34:59.871 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (14ms).
+2025-12-16 12:34:59.915 +03:00 [DBG] Executing DbCommand [Parameters=[@__cutomerIdentityNumber_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address_BuildingNumber], [c].[Address_City], [c].[Address_Country], [c].[Address_District], [c].[Address_PostalCode], [c].[Address_Street], [c].[Address_SubNumber], [c].[CreatedBy], [c].[CreatedDate], [c].[CustomerType], [c].[EmailAddress], [c].[FullName], [c].[IdentityNumber], [c].[IdentityType], [c].[IsDeleted], [c].[LastUpdatedDate], [c].[OverpaymentBalance], [c].[PhoneNumber], [c].[VATNumber]
+FROM [Customers] AS [c]
+WHERE [c].[IdentityNumber] = @__cutomerIdentityNumber_0
+2025-12-16 12:34:59.943 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__cutomerIdentityNumber_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Address_BuildingNumber], [c].[Address_City], [c].[Address_Country], [c].[Address_District], [c].[Address_PostalCode], [c].[Address_Street], [c].[Address_SubNumber], [c].[CreatedBy], [c].[CreatedDate], [c].[CustomerType], [c].[EmailAddress], [c].[FullName], [c].[IdentityNumber], [c].[IdentityType], [c].[IsDeleted], [c].[LastUpdatedDate], [c].[OverpaymentBalance], [c].[PhoneNumber], [c].[VATNumber]
+FROM [Customers] AS [c]
+WHERE [c].[IdentityNumber] = @__cutomerIdentityNumber_0
+2025-12-16 12:35:00.181 +03:00 [DBG] Context 'BillingServiceDBContext' started tracking 'Customer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:00.341 +03:00 [DBG] Closing data reader to 'GAC-BillingService' on server '.'.
+2025-12-16 12:35:00.356 +03:00 [DBG] A data reader for 'GAC-BillingService' on server '.' is being disposed after spending 227ms reading results.
+2025-12-16 12:35:00.460 +03:00 [DBG] 'BillingServiceDBContext' generated a temporary value for the property 'Invoice.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:00.692 +03:00 [DBG] The navigation 'Invoice.Tenant' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:00.724 +03:00 [DBG] Context 'BillingServiceDBContext' started tracking 'Invoice' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:00.736 +03:00 [DBG] 'BillingServiceDBContext' generated a temporary value for the property 'InvoicesAttachment.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:00.763 +03:00 [DBG] The navigation 'InvoicesAttachment.Invoice' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:00.772 +03:00 [DBG] Context 'BillingServiceDBContext' started tracking 'InvoicesAttachment' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:00.782 +03:00 [DBG] 'BillingServiceDBContext' generated a temporary value for the property 'InvoicesItem.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:00.808 +03:00 [DBG] The navigation 'InvoicesItem.Invoice' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:00.817 +03:00 [DBG] Context 'BillingServiceDBContext' started tracking 'InvoicesItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:00.825 +03:00 [DBG] SaveChanges starting for 'BillingServiceDBContext'.
+2025-12-16 12:35:00.836 +03:00 [DBG] DetectChanges starting for 'BillingServiceDBContext'.
+2025-12-16 12:35:00.925 +03:00 [DBG] DetectChanges completed for 'BillingServiceDBContext'.
+2025-12-16 12:35:01.076 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-12-16 12:35:01.083 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-16 12:35:01.086 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2025-12-16 12:35:01.097 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (13ms).
+2025-12-16 12:35:01.116 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Precision = 18) (DbType = Decimal), @p1='?' (Size = 3000), @p2='?' (Size = 100), @p3='?' (Size = 50), @p4='?' (DbType = DateTime), @p5='?' (Size = 50), @p6='?' (DbType = Int64), @p7='?' (DbType = Int64), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 50), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (DbType = Boolean), @p14='?' (DbType = Boolean), @p15='?' (DbType = Boolean), @p16='?' (DbType = Boolean), @p17='?' (DbType = DateTime), @p18='?' (DbType = DateTime), @p19='?' (Size = 4000), @p20='?' (Size = 100), @p21='?' (Size = 100), @p22='?' (DbType = Int64), @p23='?' (Size = 4000), @p24='?' (DbType = Int64), @p25='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Invoices] ([Amount], [CancelationReasons], [ClientReferenceNumber], [CreatedBy], [CreatedDate], [Currency], [CustomerID], [DiscountedPrimaryInvoiceID], [DueAt], [ExternalId], [InvoiceNumber], [InvoiceStatus], [InvoiceType], [IsDeleted], [IsDiscounted], [IsSubInvoice], [IsSubstitution], [IssuedAt], [LastUpdatedDate], [Metadata], [PaymentProvider], [PaymentReference], [PrimaryInvoiceID], [ProviderResponse], [SubstitutionPrimaryInvoiceID], [TenantId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25);
+2025-12-16 12:35:01.135 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@p0='?' (Precision = 18) (DbType = Decimal), @p1='?' (Size = 3000), @p2='?' (Size = 100), @p3='?' (Size = 50), @p4='?' (DbType = DateTime), @p5='?' (Size = 50), @p6='?' (DbType = Int64), @p7='?' (DbType = Int64), @p8='?' (DbType = DateTime), @p9='?' (DbType = Guid), @p10='?' (Size = 50), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (DbType = Boolean), @p14='?' (DbType = Boolean), @p15='?' (DbType = Boolean), @p16='?' (DbType = Boolean), @p17='?' (DbType = DateTime), @p18='?' (DbType = DateTime), @p19='?' (Size = 4000), @p20='?' (Size = 100), @p21='?' (Size = 100), @p22='?' (DbType = Int64), @p23='?' (Size = 4000), @p24='?' (DbType = Int64), @p25='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Invoices] ([Amount], [CancelationReasons], [ClientReferenceNumber], [CreatedBy], [CreatedDate], [Currency], [CustomerID], [DiscountedPrimaryInvoiceID], [DueAt], [ExternalId], [InvoiceNumber], [InvoiceStatus], [InvoiceType], [IsDeleted], [IsDiscounted], [IsSubInvoice], [IsSubstitution], [IssuedAt], [LastUpdatedDate], [Metadata], [PaymentProvider], [PaymentReference], [PrimaryInvoiceID], [ProviderResponse], [SubstitutionPrimaryInvoiceID], [TenantId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25);
+2025-12-16 12:35:01.183 +03:00 [DBG] The foreign key property 'Invoice.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-12-16 12:35:01.200 +03:00 [DBG] The foreign key property 'InvoicesAttachment.InvoiceId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-12-16 12:35:01.211 +03:00 [DBG] The foreign key property 'InvoicesItem.InvoiceId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-12-16 12:35:01.223 +03:00 [DBG] Closing data reader to 'GAC-BillingService' on server '.'.
+2025-12-16 12:35:01.229 +03:00 [DBG] A data reader for 'GAC-BillingService' on server '.' is being disposed after spending 79ms reading results.
+2025-12-16 12:35:01.242 +03:00 [DBG] Executing 2 update commands as a batch.
+2025-12-16 12:35:01.246 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-16 12:35:01.250 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2025-12-16 12:35:01.253 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2025-12-16 12:35:01.257 +03:00 [DBG] Executing DbCommand [Parameters=[@p26='?' (Size = 50), @p27='?' (DbType = DateTime), @p28='?' (Size = 200), @p29='?' (DbType = Int64), @p30='?' (DbType = Boolean), @p31='?' (Precision = 18) (DbType = Decimal), @p32='?' (Size = 50), @p33='?' (DbType = DateTime), @p34='?' (DbType = Int64), @p35='?' (DbType = Boolean), @p36='?' (Size = 500), @p37='?' (Size = 200), @p38='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [InvoicesAttachments] ([CreatedBy], [CreatedDate], [FileName], [InvoiceId], [IsDeleted])
+OUTPUT INSERTED.[Id]
+VALUES (@p26, @p27, @p28, @p29, @p30);
+INSERT INTO [InvoicesItems] ([Amount], [CreatedBy], [CreatedDate], [InvoiceId], [IsDeleted], [ItemDesc], [ItemName], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p31, @p32, @p33, @p34, @p35, @p36, @p37, @p38);
+2025-12-16 12:35:01.266 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p26='?' (Size = 50), @p27='?' (DbType = DateTime), @p28='?' (Size = 200), @p29='?' (DbType = Int64), @p30='?' (DbType = Boolean), @p31='?' (Precision = 18) (DbType = Decimal), @p32='?' (Size = 50), @p33='?' (DbType = DateTime), @p34='?' (DbType = Int64), @p35='?' (DbType = Boolean), @p36='?' (Size = 500), @p37='?' (Size = 200), @p38='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [InvoicesAttachments] ([CreatedBy], [CreatedDate], [FileName], [InvoiceId], [IsDeleted])
+OUTPUT INSERTED.[Id]
+VALUES (@p26, @p27, @p28, @p29, @p30);
+INSERT INTO [InvoicesItems] ([Amount], [CreatedBy], [CreatedDate], [InvoiceId], [IsDeleted], [ItemDesc], [ItemName], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p31, @p32, @p33, @p34, @p35, @p36, @p37, @p38);
+2025-12-16 12:35:01.272 +03:00 [DBG] The foreign key property 'InvoicesAttachment.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-12-16 12:35:01.277 +03:00 [DBG] The foreign key property 'InvoicesItem.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-12-16 12:35:01.282 +03:00 [DBG] Closing data reader to 'GAC-BillingService' on server '.'.
+2025-12-16 12:35:01.289 +03:00 [DBG] A data reader for 'GAC-BillingService' on server '.' is being disposed after spending 17ms reading results.
+2025-12-16 12:35:01.307 +03:00 [DBG] An entity of type 'Invoice' tracked by 'BillingServiceDBContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:01.313 +03:00 [DBG] An entity of type 'InvoicesAttachment' tracked by 'BillingServiceDBContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:01.318 +03:00 [DBG] An entity of type 'InvoicesItem' tracked by 'BillingServiceDBContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:01.332 +03:00 [DBG] SaveChanges completed for 'BillingServiceDBContext' with 3 entities written to the database.
+2025-12-16 12:35:01.383 +03:00 [DBG] 'BillingServiceDBContext' generated a temporary value for the property 'OutboxEvent.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:01.411 +03:00 [DBG] Context 'BillingServiceDBContext' started tracking 'OutboxEvent' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:01.420 +03:00 [DBG] 'BillingServiceDBContext' generated a temporary value for the property 'AuditEvent.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:01.458 +03:00 [DBG] Context 'BillingServiceDBContext' started tracking 'AuditEvent' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:01.462 +03:00 [DBG] SaveChanges starting for 'BillingServiceDBContext'.
+2025-12-16 12:35:01.470 +03:00 [DBG] DetectChanges starting for 'BillingServiceDBContext'.
+2025-12-16 12:35:01.494 +03:00 [DBG] DetectChanges completed for 'BillingServiceDBContext'.
+2025-12-16 12:35:01.501 +03:00 [DBG] Executing 2 update commands as a batch.
+2025-12-16 12:35:01.505 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2025-12-16 12:35:01.510 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-12-16 12:35:01.515 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2025-12-16 12:35:01.519 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (9ms).
+2025-12-16 12:35:01.524 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 4000), @p2='?' (Size = 50), @p3='?' (DbType = DateTime), @p4='?' (Size = 500), @p5='?' (Size = 20), @p6='?' (Size = 100), @p7='?' (Size = 100), @p8='?' (DbType = Int64), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime), @p11='?' (Size = 4000), @p12='?' (Size = 300), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [audit].[AuditEvents] ([Action], [Changes], [CreatedBy], [CreatedDate], [Description], [EntityId], [EntityType], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+INSERT INTO [Outbox_events] ([Aggregate_id], [CorrelationId], [CreatedDate], [ErrorMsg], [Event_type], [Payload], [Processed], [ProcessingStatus])
+OUTPUT INSERTED.[Id]
+VALUES (@p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+2025-12-16 12:35:01.535 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 4000), @p2='?' (Size = 50), @p3='?' (DbType = DateTime), @p4='?' (Size = 500), @p5='?' (Size = 20), @p6='?' (Size = 100), @p7='?' (Size = 100), @p8='?' (DbType = Int64), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime), @p11='?' (Size = 4000), @p12='?' (Size = 300), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 20) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [audit].[AuditEvents] ([Action], [Changes], [CreatedBy], [CreatedDate], [Description], [EntityId], [EntityType], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+INSERT INTO [Outbox_events] ([Aggregate_id], [CorrelationId], [CreatedDate], [ErrorMsg], [Event_type], [Payload], [Processed], [ProcessingStatus])
+OUTPUT INSERTED.[Id]
+VALUES (@p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+2025-12-16 12:35:01.544 +03:00 [DBG] The foreign key property 'AuditEvent.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-12-16 12:35:01.551 +03:00 [DBG] The foreign key property 'OutboxEvent.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-12-16 12:35:01.554 +03:00 [DBG] Closing data reader to 'GAC-BillingService' on server '.'.
+2025-12-16 12:35:01.560 +03:00 [DBG] A data reader for 'GAC-BillingService' on server '.' is being disposed after spending 18ms reading results.
+2025-12-16 12:35:01.568 +03:00 [DBG] An entity of type 'AuditEvent' tracked by 'BillingServiceDBContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:01.577 +03:00 [DBG] An entity of type 'OutboxEvent' tracked by 'BillingServiceDBContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-12-16 12:35:01.582 +03:00 [DBG] SaveChanges completed for 'BillingServiceDBContext' with 2 entities written to the database.
+2025-12-16 12:35:01.589 +03:00 [DBG] Committing transaction.
+2025-12-16 12:35:01.608 +03:00 [DBG] Committed transaction.
+2025-12-16 12:35:01.614 +03:00 [DBG] Closing connection to database 'GAC-BillingService' on server '.'.
+2025-12-16 12:35:01.619 +03:00 [DBG] Closed connection to database 'GAC-BillingService' on server '.' (5ms).
+2025-12-16 12:35:01.626 +03:00 [DBG] Disposing transaction.
+2025-12-16 12:35:01.637 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-12-16 12:35:01.646 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-12-16 12:35:01.650 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/json"]'.
+2025-12-16 12:35:01.659 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-12-16 12:35:01.664 +03:00 [INF] Executing OkObjectResult, writing value of type 'BillingSystem.SharedKernel.ApiResponse`1[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-16 12:35:01.683 +03:00 [INF] Executed action BillingSystem.API.Controllers.InvoicesController.Post (BillingSystem.API) in 3294.0935ms
+2025-12-16 12:35:01.689 +03:00 [INF] Executed endpoint 'BillingSystem.API.Controllers.InvoicesController.Post (BillingSystem.API)'
+2025-12-16 12:35:01.693 +03:00 [INF] HTTP POST /api/Invoices/Post 200 in 6298ms
+CorrelationId: 9a846fae-3747-4bfa-8e00-afa495bd1bac
+Request: {
+    "externalId": "9a846fae-3747-4bfa-8e00-afa495bd1bac",
+    "tenantId": 2,
+    "amount": 200000,
+    "currency": "SAR",
+    "invoiceType": 2,
+    "invoiceStatus": 1,
+    "issuedAt": "2025-12-10T08:48:29.095Z",
+    "dueAt": "2026-12-29T08:48:29.095Z",
+    "IsSubInvoice": true,
+    "ClientReferenceNumber": "Installment02",
+    "customer": {
+        "fullName": "Abdualmajeed alharbi",
+        "customerType": 1,
+        "identityType": 1,
+        "address": {
+            "addressCountry": "saudi arabia",
+            "addressCity": "riyadh",
+            "addressPostalCode": "3445",
+            "addressDistrict": "laban",
+            "addressStreet": "altaif",
+            "addressBuildingNumber": "322",
+            "addressSubNumber": "433"
+        },
+        "identityNumber": "1397026390",
+        "phoneNumber": "0582982757",
+        "emailAddress": "mnsour@gac.gov.sa",
+        "vatnumber": ""
+    },
+    "Metadata": "{\n  \"cityHappened\": 1,\n  \"fineGroupCode\": 258,\n  \"detailFineType\": 258001,\n  \"regPersonID\": 1025326510,\n  \"remarks\": \"remarks\",\n  \"resolutionRef\": \"\",\n  \"resolutionSource\": 0,\n  \"resolutionType\": 0,\n  \"securityOperatorID\": 1025326332\n}",
+    "attachments": [
+        {
+            "fileName": "string",
+            "fileContent": ""
+        }
+    ],
+    "items": [
+        {
+            "itemName": "مخالفة تواطؤ",
+            "itemDesc": "مخالفة تواطؤ 200000 ريال",
+            "amount": 200000
+        }
+    ]
+}
+Response: {"message":"invoice created.","statusCode":"200","data":20010,"isSucceed":true,"validationErrors":null}
+2025-12-16 12:35:01.711 +03:00 [INF] HTTP POST /api/Invoices/Post responded 200 in 6443.6755 ms
+2025-12-16 12:35:01.718 +03:00 [DBG] Connection id "0HNHSGPB5O3DD" completed keep alive response.
+2025-12-16 12:35:01.725 +03:00 [DBG] 'BillingServiceDBContext' disposed.
+2025-12-16 12:35:01.735 +03:00 [DBG] Disposing connection to database 'GAC-BillingService' on server '.'.
+2025-12-16 12:35:01.741 +03:00 [DBG] Disposed connection to database '' on server '' (6ms).
+2025-12-16 12:35:01.748 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7257/api/Invoices/Post - 200 null application/json; charset=utf-8 6509.1327ms
+2025-12-16 12:44:10.023 +03:00 [DBG] Connection id "0HNHSGPB5O3DB" received FIN.
+2025-12-16 12:44:10.043 +03:00 [DBG] Connection id "0HNHSGPB5O3DB" is closed. The last processed stream ID was 7.
+2025-12-16 12:44:10.050 +03:00 [DBG] The connection queue processing loop for 0HNHSGPB5O3DB completed.
+2025-12-16 12:44:10.054 +03:00 [DBG] Connection id "0HNHSGPB5O3DB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-16 12:44:10.065 +03:00 [DBG] Connection id "0HNHSGPB5O3DB" stopped.

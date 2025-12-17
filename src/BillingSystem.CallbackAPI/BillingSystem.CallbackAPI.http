@@ -1,0 +1,6 @@
+@BillingSystem.CallbackAPI_HostAddress = http://localhost:5244
+
+GET {{BillingSystem.CallbackAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,228 @@
+2025-12-01 10:10:38.211 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-12-01 10:10:38.474 +03:00 [DBG] Hosting starting
+2025-12-01 10:10:39.673 +03:00 [DBG] Starting bus instances: IBus
+2025-12-01 10:10:39.684 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-12-01 10:10:39.749 +03:00 [DBG] Middleware loaded
+2025-12-01 10:10:39.755 +03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16519 B).
+2025-12-01 10:10:39.792 +03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-12-01 10:10:39.800 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-12-01 10:10:40.381 +03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-12-01 10:10:40.439 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 55927)
+2025-12-01 10:10:40.589 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemAPI_bus_5n4yyyyq5bqag5gebdxdbkf5fn?temporary=true"
+2025-12-01 10:10:40.599 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-12-01 10:10:40.928 +03:00 [INF] Now listening on: https://localhost:7257
+2025-12-01 10:10:40.942 +03:00 [INF] Now listening on: http://localhost:5009
+2025-12-01 10:10:40.952 +03:00 [DBG] Loaded hosting startup assembly BillingSystem.API
+2025-12-01 10:10:40.954 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-12-01 10:10:40.958 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-12-01 10:10:40.975 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-12-01 10:10:41.092 +03:00 [DBG] Connection id "0HNHGL2UAESHK" received FIN.
+2025-12-01 10:10:41.096 +03:00 [DBG] Connection id "0HNHGL2UAESHK" accepted.
+2025-12-01 10:10:41.140 +03:00 [DBG] Connection id "0HNHGL2UAESHK" started.
+2025-12-01 10:10:41.370 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-01 10:10:41.769 +03:00 [DBG] Connection id "0HNHGL2UAESHK" stopped.
+2025-12-01 10:10:41.847 +03:00 [DBG] Connection id "0HNHGL2UAESHK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-01 10:10:41.877 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 10:10:41.952 +03:00 [INF] Hosting environment: Development
+2025-12-01 10:10:41.961 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.API
+2025-12-01 10:10:41.977 +03:00 [DBG] Hosting started
+2025-12-01 10:10:47.669 +03:00 [DBG] Connection id "0HNHGL2UAESHL" accepted.
+2025-12-01 10:10:47.673 +03:00 [DBG] Connection id "0HNHGL2UAESHL" started.
+2025-12-01 10:10:47.676 +03:00 [DBG] Connection id "0HNHGL2UAESHM" accepted.
+2025-12-01 10:10:47.694 +03:00 [DBG] Connection id "0HNHGL2UAESHM" started.
+2025-12-01 10:10:47.843 +03:00 [DBG] Connection id "0HNHGL2UAESHL" received FIN.
+2025-12-01 10:10:47.898 +03:00 [DBG] Connection 0HNHGL2UAESHM established using the following protocol: "Tls13"
+2025-12-01 10:10:47.898 +03:00 [DBG] Connection 0HNHGL2UAESHL established using the following protocol: "Tls13"
+2025-12-01 10:10:47.974 +03:00 [DBG] Connection id "0HNHGL2UAESHL" is closed. The last processed stream ID was 0.
+2025-12-01 10:10:48.034 +03:00 [DBG] Connection id "0HNHGL2UAESHL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-01 10:10:48.115 +03:00 [DBG] The connection queue processing loop for 0HNHGL2UAESHL completed.
+2025-12-01 10:10:48.200 +03:00 [DBG] Connection id "0HNHGL2UAESHL" stopped.
+2025-12-01 10:10:48.239 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/swagger - null null
+2025-12-01 10:10:48.534 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-12-01 10:10:48.619 +03:00 [DBG] No candidates found for the request path '/swagger'
+2025-12-01 10:10:48.626 +03:00 [DBG] Request did not match any endpoints
+2025-12-01 10:10:48.658 +03:00 [INF] HTTP GET /swagger responded 301 in 10.8814 ms
+2025-12-01 10:10:48.680 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/swagger - 301 0 null 479.0194ms
+2025-12-01 10:10:48.692 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/swagger/index.html - null null
+2025-12-01 10:10:48.705 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-12-01 10:10:48.708 +03:00 [DBG] Request did not match any endpoints
+2025-12-01 10:10:48.826 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-12-01 10:10:48.830 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-12-01 10:10:48.887 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 174.6749 ms
+2025-12-01 10:10:48.892 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-12-01 10:10:48.893 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/swagger/swagger-ui.css - null null
+2025-12-01 10:10:48.893 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/swagger/swagger-ui-standalone-preset.js - null null
+2025-12-01 10:10:48.893 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/swagger/swagger-ui-bundle.js - null null
+2025-12-01 10:10:48.903 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2025-12-01 10:10:48.909 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-12-01 10:10:48.918 +03:00 [DBG] Request did not match any endpoints
+2025-12-01 10:10:48.920 +03:00 [DBG] Request did not match any endpoints
+2025-12-01 10:10:48.925 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/_vs/browserLink - null null
+2025-12-01 10:10:48.937 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-01 10:10:48.914 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2025-12-01 10:10:48.896 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-12-01 10:10:49.007 +03:00 [DBG] Request did not match any endpoints
+2025-12-01 10:10:49.015 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/swagger/index.html - 200 null text/html;charset=utf-8 323.3556ms
+2025-12-01 10:10:49.012 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-12-01 10:10:49.015 +03:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-12-01 10:10:49.012 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-12-01 10:10:49.052 +03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 113.3895 ms
+2025-12-01 10:10:49.054 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 116.9116ms
+2025-12-01 10:10:49.066 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 173.0878ms
+2025-12-01 10:10:49.084 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-12-01 10:10:49.056 +03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 120.5966 ms
+2025-12-01 10:10:49.098 +03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 72.8351 ms
+2025-12-01 10:10:49.104 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/swagger/swagger-ui.css - 200 152034 text/css 211.5235ms
+2025-12-01 10:10:49.112 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 219.5914ms
+2025-12-01 10:10:49.122 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/_vs/browserLink - 200 null text/javascript; charset=UTF-8 197.1181ms
+2025-12-01 10:10:49.286 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/swagger/v1/swagger.json - null null
+2025-12-01 10:10:49.296 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-12-01 10:10:49.300 +03:00 [DBG] Request did not match any endpoints
+2025-12-01 10:10:49.331 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 26.7690 ms
+2025-12-01 10:10:49.340 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 54.0851ms
+2025-12-01 10:10:49.396 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/swagger/favicon-32x32.png - null null
+2025-12-01 10:10:49.403 +03:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-12-01 10:10:49.406 +03:00 [DBG] Request did not match any endpoints
+2025-12-01 10:10:49.413 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-12-01 10:10:49.419 +03:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 6.8334 ms
+2025-12-01 10:10:49.425 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/swagger/favicon-32x32.png - 200 628 image/png 29.4363ms
+2025-12-01 10:49:19.932 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-12-01 10:49:20.176 +03:00 [DBG] Hosting starting
+2025-12-01 10:49:20.703 +03:00 [DBG] Starting bus instances: IBus
+2025-12-01 10:49:20.711 +03:00 [DBG] Starting bus: "rabbitmq://localhost/"
+2025-12-01 10:49:20.753 +03:00 [DBG] Middleware loaded
+2025-12-01 10:49:20.761 +03:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16519 B).
+2025-12-01 10:49:20.774 +03:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-12-01 10:49:20.787 +03:00 [DBG] Connect: guest@localhost:5672/
+2025-12-01 10:49:21.004 +03:00 [DBG] Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 49278)
+2025-12-01 10:49:21.086 +03:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-12-01 10:49:21.113 +03:00 [DBG] Endpoint Ready: "rabbitmq://localhost/ECHGHANNAMLP1_BillingSystemAPI_bus_5nioyyyq5bqa8j3kbdxdbmtdbq?temporary=true"
+2025-12-01 10:49:21.120 +03:00 [INF] Bus started: "rabbitmq://localhost/"
+2025-12-01 10:49:21.374 +03:00 [INF] Now listening on: https://localhost:7257
+2025-12-01 10:49:21.380 +03:00 [INF] Now listening on: http://localhost:5009
+2025-12-01 10:49:21.382 +03:00 [DBG] Loaded hosting startup assembly BillingSystem.API
+2025-12-01 10:49:21.385 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-12-01 10:49:21.389 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-12-01 10:49:21.392 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-12-01 10:49:21.544 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-01 10:49:21.548 +03:00 [INF] Hosting environment: Development
+2025-12-01 10:49:21.552 +03:00 [INF] Content root path: C:\Repositories\Gac-BillingSystem\src\BillingSystem.API
+2025-12-01 10:49:21.556 +03:00 [DBG] Hosting started
+2025-12-01 10:49:21.567 +03:00 [DBG] Connection id "0HNHGLOHS7FDA" accepted.
+2025-12-01 10:49:21.567 +03:00 [DBG] Connection id "0HNHGLOHS7FDB" accepted.
+2025-12-01 10:49:21.571 +03:00 [DBG] Connection id "0HNHGLOHS7FDA" started.
+2025-12-01 10:49:21.573 +03:00 [DBG] Connection id "0HNHGLOHS7FDB" started.
+2025-12-01 10:49:21.580 +03:00 [DBG] Connection id "0HNHGLOHS7FDB" received FIN.
+2025-12-01 10:49:21.580 +03:00 [DBG] Connection id "0HNHGLOHS7FDA" received FIN.
+2025-12-01 10:49:21.617 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-01 10:49:21.618 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-12-01 10:49:21.673 +03:00 [DBG] Connection id "0HNHGLOHS7FDA" stopped.
+2025-12-01 10:49:21.675 +03:00 [DBG] Connection id "0HNHGLOHS7FDB" stopped.
+2025-12-01 10:49:21.689 +03:00 [DBG] Connection id "0HNHGLOHS7FDB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-01 10:49:21.689 +03:00 [DBG] Connection id "0HNHGLOHS7FDA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-01 10:49:22.499 +03:00 [DBG] Connection id "0HNHGLOHS7FDC" accepted.
+2025-12-01 10:49:22.503 +03:00 [DBG] Connection id "0HNHGLOHS7FDC" started.
+2025-12-01 10:49:22.634 +03:00 [DBG] Connection 0HNHGLOHS7FDC established using the following protocol: "Tls13"
+2025-12-01 10:49:22.743 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/swagger/index.html - null null
+2025-12-01 10:49:22.823 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-12-01 10:49:22.862 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-12-01 10:49:22.867 +03:00 [DBG] Request did not match any endpoints
+2025-12-01 10:49:23.023 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-12-01 10:49:23.029 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-12-01 10:49:23.064 +03:00 [INF] HTTP GET /swagger/index.html responded 200 in 185.5017 ms
+2025-12-01 10:49:23.072 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-12-01 10:49:23.076 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-12-01 10:49:23.084 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/swagger/index.html - 200 null text/html;charset=utf-8 357.0793ms
+2025-12-01 10:49:23.129 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/_vs/browserLink - null null
+2025-12-01 10:49:23.129 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-01 10:49:23.158 +03:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-12-01 10:49:23.171 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 42.9733ms
+2025-12-01 10:49:23.231 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.9615ms
+2025-12-01 10:49:23.361 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7257/swagger/v1/swagger.json - null null
+2025-12-01 10:49:23.370 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-12-01 10:49:23.374 +03:00 [DBG] Request did not match any endpoints
+2025-12-01 10:49:23.405 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 26.0028 ms
+2025-12-01 10:49:23.414 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7257/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.0426ms
+2025-12-01 10:54:48.185 +03:00 [DBG] Connection id "0HNHGLOHS7FDC" received FIN.
+2025-12-01 10:54:48.201 +03:00 [DBG] Connection id "0HNHGLOHS7FDC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-01 10:54:48.218 +03:00 [DBG] Connection id "0HNHGLOHS7FDC" is closed. The last processed stream ID was 7.
+2025-12-01 10:54:48.228 +03:00 [DBG] The connection queue processing loop for 0HNHGLOHS7FDC completed.
+2025-12-01 10:54:48.236 +03:00 [DBG] Connection id "0HNHGLOHS7FDC" stopped.
+2025-12-01 11:20:10.017 +03:00 [DBG] Connection id "0HNHGLOHS7FDD" accepted.
+2025-12-01 11:20:10.024 +03:00 [DBG] Connection id "0HNHGLOHS7FDD" started.
+2025-12-01 11:20:10.050 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5009/weatherforecast/ - null null
+2025-12-01 11:20:10.060 +03:00 [DBG] No candidates found for the request path '/weatherforecast/'
+2025-12-01 11:20:10.063 +03:00 [DBG] Request did not match any endpoints
+2025-12-01 11:20:10.070 +03:00 [DBG] The request path  does not match the path filter
+2025-12-01 11:20:10.080 +03:00 [DBG] Https port '7257' loaded from configuration.
+2025-12-01 11:20:10.088 +03:00 [DBG] Redirecting to 'https://localhost:7257/weatherforecast/'.
+2025-12-01 11:20:10.093 +03:00 [INF] HTTP GET /weatherforecast/ responded 307 in 25.6856 ms
+2025-12-01 11:20:10.121 +03:00 [DBG] Connection id "0HNHGLOHS7FDD" completed keep alive response.
+2025-12-01 11:20:10.126 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5009/weatherforecast/ - 307 0 null 80.3794ms
+2025-12-01 11:20:10.126 +03:00 [DBG] Connection id "0HNHGLOHS7FDE" accepted.
+2025-12-01 11:20:10.153 +03:00 [DBG] Connection id "0HNHGLOHS7FDE" started.
+2025-12-01 11:20:10.170 +03:00 [DBG] Connection 0HNHGLOHS7FDE established using the following protocol: "Tls13"
+2025-12-01 11:20:10.175 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7257/weatherforecast/ - null null
+2025-12-01 11:20:10.181 +03:00 [DBG] No candidates found for the request path '/weatherforecast/'
+2025-12-01 11:20:10.183 +03:00 [DBG] Request did not match any endpoints
+2025-12-01 11:20:10.185 +03:00 [DBG] The request path  does not match the path filter
+2025-12-01 11:20:11.454 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-12-01 11:20:17.013 +03:00 [ERR] HTTP GET /weatherforecast/ responded 500 in 6827.7283 ms
+System.InvalidOperationException: The response cannot be cleared, it has already started sending.
+   at Microsoft.AspNetCore.Http.ResponseExtensions.Clear(HttpResponse response)
+   at BillingSystem.API.Middlewares.TenantIdValidatorMiddleware.InvokeAsync(HttpContext context, ITenantService tenantService) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.API\Middlewares\TenantIdValidatorMiddleware.cs:line 23
+   at BillingSystem.API.Middlewares.IdempotencyKeyValidatorMiddleware.InvokeAsync(HttpContext context) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.API\Middlewares\IdempotencyKeyValidatorMiddleware.cs:line 31
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-12-01 11:20:17.028 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The response cannot be cleared, it has already started sending.
+   at Microsoft.AspNetCore.Http.ResponseExtensions.Clear(HttpResponse response)
+   at BillingSystem.API.Middlewares.TenantIdValidatorMiddleware.InvokeAsync(HttpContext context, ITenantService tenantService) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.API\Middlewares\TenantIdValidatorMiddleware.cs:line 23
+   at BillingSystem.API.Middlewares.IdempotencyKeyValidatorMiddleware.InvokeAsync(HttpContext context) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.API\Middlewares\IdempotencyKeyValidatorMiddleware.cs:line 31
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-01 11:20:17.035 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2025-12-01 11:20:17.039 +03:00 [ERR] Connection id "0HNHGLOHS7FDE", Request id "0HNHGLOHS7FDE:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The response cannot be cleared, it has already started sending.
+   at Microsoft.AspNetCore.Http.ResponseExtensions.Clear(HttpResponse response)
+   at BillingSystem.API.Middlewares.TenantIdValidatorMiddleware.InvokeAsync(HttpContext context, ITenantService tenantService) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.API\Middlewares\TenantIdValidatorMiddleware.cs:line 23
+   at BillingSystem.API.Middlewares.IdempotencyKeyValidatorMiddleware.InvokeAsync(HttpContext context) in C:\Repositories\Gac-BillingSystem\src\BillingSystem.API\Middlewares\IdempotencyKeyValidatorMiddleware.cs:line 31
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2025-12-01 11:20:17.186 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7257/weatherforecast/ - 400 null null 7011.726ms
+2025-12-01 11:20:17.196 +03:00 [DBG] Connection id "0HNHGLOHS7FDE" disconnecting.
+2025-12-01 11:20:17.198 +03:00 [DBG] Connection id "0HNHGLOHS7FDE" stopped.
+2025-12-01 11:20:17.201 +03:00 [DBG] Connection id "0HNHGLOHS7FDE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-01 11:20:36.326 +03:00 [DBG] Connection id "0HNHGLOHS7FDD" reset.
+2025-12-01 11:20:36.330 +03:00 [DBG] Connection id "0HNHGLOHS7FDD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-12-01 11:20:36.335 +03:00 [DBG] Connection id "0HNHGLOHS7FDD" disconnecting.
+2025-12-01 11:20:36.339 +03:00 [DBG] Connection id "0HNHGLOHS7FDD" stopped.

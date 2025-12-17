@@ -1,0 +1,15 @@
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\bin\Release\net8.0\BillingSystem.Domain.deps.json
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\bin\Release\net8.0\BillingSystem.Domain.dll
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\bin\Release\net8.0\BillingSystem.Domain.pdb
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\bin\Release\net8.0\BillingSystem.Domain.Contracts.dll
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\bin\Release\net8.0\BillingSystem.Domain.Contracts.pdb
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\obj\Release\net8.0\BillingSystem.Domain.csproj.AssemblyReference.cache
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\obj\Release\net8.0\BillingSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\obj\Release\net8.0\BillingSystem.Domain.AssemblyInfoInputs.cache
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\obj\Release\net8.0\BillingSystem.Domain.AssemblyInfo.cs
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\obj\Release\net8.0\BillingSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\obj\Release\net8.0\BillingS.41CD5F6B.Up2Date
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\obj\Release\net8.0\BillingSystem.Domain.dll
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\obj\Release\net8.0\refint\BillingSystem.Domain.dll
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\obj\Release\net8.0\BillingSystem.Domain.pdb
+C:\Repositories\Gac-BillingSystem\src\BillingSystem.Domain\obj\Release\net8.0\ref\BillingSystem.Domain.dll
